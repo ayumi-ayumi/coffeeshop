@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  /* margin-top: -100px; */
+  background-color: rgb(223, 237, 248);
+  /* position:static */
+}
+
+header {
+  margin: 0;
+  height: 660px;
+  background-image: url(/image/header_coffee.jpg);
+  background-size: cover;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #89CFD7;
+  opacity: 0.9;
+}
+
+.navlist {
+  margin: 0;
+  height: 100px;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.navlist li {
+  display: inline;
+  margin: 40px;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navlist li a:hover {
+  /* background-color: #c9eef3; */
+  transition: .5s;
+  color: rgb(92, 153, 51);
+  /* font-size: 1.2rem; */
+  /* opacity: 1; */
+  display: inline-block;
+  animation: jello;
+  animation-duration: 0.8s;
+}
+
+.headerMain {
+  text-align: center;
+  padding-top: 230px;
+}
+
+.headerMain h1 {
+  font-size: 3rem;
+  /* margin-top: 100px; */
+  letter-spacing: 6px;
+}
+
+.headerMain p {
+  /* font-size: 3rem; */
+  margin-top: 100px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+main {
+  height: 2000px;
+}
+
+.location h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.location p {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.eachLocation h4 {
+  font-size: 1.5rem;
+}
+.imgAndp img {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.imgAndp p {
+  width: 600px;
+}
+.imgAndp {
+  display: flex;
+  justify-content: center;
+}
