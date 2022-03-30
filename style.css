@@ -197,3 +197,12 @@ main {
   width: 50%;
   background-color: aqua;
 }
+.map {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 40px; */
+  padding: 40px 0;
+}
+.info {
+  align-self: center;
+}
