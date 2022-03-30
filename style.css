@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  /* margin-top: -100px; */
   background-color: rgb(223, 237, 248);
-  /* position:static */
 }
 
 header {
@@ -30,13 +28,14 @@ header {
   width: 100%;
   background-color: #89CFD7;
   opacity: 0.9;
+  z-index: 5;
 }
 
 .navlist {
   margin: 0;
   height: 100px;
   display: flex;
-  /* justify-content: flex-end; */
+  z-index: 4;
 }
 
 .navlist li {
@@ -50,11 +49,8 @@ header {
 }
 
 .navlist li a:hover {
-  /* background-color: #c9eef3; */
   transition: .5s;
   color: rgb(92, 153, 51);
-  /* font-size: 1.2rem; */
-  /* opacity: 1; */
   display: inline-block;
   animation: jello;
   animation-duration: 0.8s;
@@ -72,40 +68,132 @@ header {
 }
 
 .headerMain p {
-  /* font-size: 3rem; */
   margin-top: 100px;
   width: 500px;
   margin: 0 auto;
 }
 
 main {
-  height: 2000px;
+  height: auto;
 }
 
-.location h2 {
+.locations h2 {
   text-align: center;
   font-size: 2rem;
 }
 
-.location p {
-  width: 1000px;
+.locations p {
+  width: 80%;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
-
-.eachLocation h4 {
+.locationCard {
+  display: flex;
+}
+.location h4 {
   font-size: 1.5rem;
 }
-.imgAndp img {
+.location {
+  text-align: center;
+  width: 33%;
+}
+.location img {
   height: 300px;
-  width: 500px;
+  width: 420px;
   object-fit: cover;
   display: block;
+  margin: 0 auto;
+  border-radius: 1%;
+  box-shadow: 15px 15px rgb(250, 245, 245);
 }
-
-.imgAndp p {
+.location p {
+  width: 90%;
+}
+.menu h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.menu p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 76%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.section .left{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  background-color: #fff;
+}
+.section .left img{
+  height: 500px;
+  width: 500px;
+  z-index: 3;
+  display: block;
+  /* position: relative; */
+  object-fit: cover;
+}
+.section .left::after{
+  background-color: rgb(223, 237, 248);
+  width: 60%;
+  height: 20%;
+  position: absolute;
+  content: '';
+  z-index: 0;
+  bottom: -20%;
+  left: 0;
+}
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+.images img {
+ height: 200px;
+ width: 200px;
+ object-fit: cover;
+ display: block;
+}
+.section .right {
   width: 600px;
 }
-.imgAndp {
+.members {
   display: flex;
-  justify-content: center;
+}
+.member {
+  text-align: center;
+}
+.member img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 20px 20px rgb(253, 247, 247);
+}
+.member p {
+  width: 80%;
+}
+.contact {
+  text-align: center;
+}
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.contact p {
+  width: 80%;
+  margin: 0 auto;
+}
+#map {
+  height: 400px;
+  width: 50%;
+  background-color: aqua;
 }
