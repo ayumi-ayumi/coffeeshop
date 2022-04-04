@@ -2,33 +2,55 @@ body {
   margin: 0;
   background-color: rgb(223, 237, 248);
 }
-
+.countdown {
+  width: auto;
+  height: 60px;
+  background-color: #445c5f;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  line-height: 60px;
+}
+.countdown em {
+  font-style: normal;
+}
+.days, .hours, .minutes, .seconds {
+  /* display: inline-block; */
+  line-height: 60px;
+  width: 20px;
+  height: 60px;
+  /* background-color: #fff; */
+  border-radius: 20%;
+  margin: 0 15px;
+}
 header {
   margin: 0;
   height: 660px;
   background-image: url(/image/header_coffee.jpg);
   background-size: cover;
+  /* position: relative; */
 }
 
 .logo {
   width: 100px;
   height: 100px;
   position: absolute;
-  top:0;
+  top: 60px;
   left:0;
   z-index: 2;
 }
-
-.top {
+.header-top {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  z-index: 5;
+}
+.top {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   background-color: #89CFD7;
   opacity: 0.9;
-  z-index: 5;
 }
 
 .navlist {
@@ -45,7 +67,7 @@ header {
 
 .navlist li a {
   text-decoration: none;
-  color: #fff;
+  color: #dbe6e8fe;
 }
 
 .navlist li a:hover {
@@ -55,6 +77,9 @@ header {
   animation: jello;
   animation-duration: 0.8s;
 }
+
+
+
 
 .headerMain {
   text-align: center;
@@ -208,27 +233,28 @@ main {
 }
 
 footer {
-  height: 400px;
+  height: auto;
   text-align: center;
   background-color: #89CFD7;
 }
-footer p {
+.newsletter p {
   font-size: 1.3rem;
-  color: #bcf0f6ce;
-  padding-top: 2px;
+  color: #cceaeece;
+  padding: 20px 0;
 }
 footer form {
   height: 50px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   position: relative;
 }
+
 .email {
   width: 400px;
   height: 35px;
   font-size: 1.2rem;
   border-radius: 5px;
   border: none;
-  background-color: #bcf0f6ce;
+  background-color: #cceaeece;
 }
 .button {
   height: 30px;
@@ -236,11 +262,14 @@ footer form {
   border-radius: 100%;
   cursor: pointer;
   position: absolute;
-  top: 33px;
+  top: 3px;
   left: 875px;
-  background-color: #89CFD7;
   border: none;
+  background-color: #89CFD7;
   color: #fff;
+}
+.button:hover {
+  background-color: #1eb2c2;
 
 }
 footer ul {
@@ -250,16 +279,22 @@ footer ul li {
   display: inline-block;
 }
 footer ul li a {
-  color: #bcf0f6ce;
+  color: #cceaeece;
   text-decoration: none;
   font-size: 1.2rem;
-  margin-left: 100px;
+  margin: 0 30px;
 }
-footer p {
-  font-size: .8rem;
+footer ul li a:hover {
+  color: #99afb2ce;
+  transition: .6s;
 }
 .logo-bottom {
   height: 70px;
   width: 70px;
   margin-top: 20px;
+}
+.bottom p{
+  margin: 0;
+  font-size: .8rem;
+  color: #cceaeece;
 }

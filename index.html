@@ -11,17 +11,30 @@
 </head>
 <body>
   <header>
-    <div class="top">
-      <h1><img src="/image/logo.png" class="logo" alt="logo"></h1>
-      <nav>
-        <ul class="navlist">
-          <li><a href="">Home</a></li>
-          <li><a href="">Location</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="header-top">
+      <div class="countdown">
+        <div>We are opening in .....</div>
+        <div class="days"></div>
+        <em>days</em>
+        <div class="hours"></div>
+        <em>hours</em>
+        <div class="minutes"></div>
+        <em>minutes</em>
+        <div class="seconds"></div>
+        <em>seconds</em>
+      </div>
+      <div class="top">
+        <h1><img src="/image/logo.png" class="logo" alt="logo"></h1>
+        <nav>
+          <ul class="navlist">
+            <li><a href="">Home</a></li>
+            <li><a href="">Location</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     
     <div class="headerMain">
@@ -157,11 +170,13 @@
   </div>
 
   <footer>
-    <p>NEWS LETTER <br>GET NEWS</p>
-    <form action="">
-      <input type="email" placeholder="email@example.com" class="email">
-      <input type="submit" class="button" value=">">
-    </form>
+    <div class="newsletter">
+      <p>NEWS LETTER <br>GET NEWS</p>
+      <form action="">
+        <input type="email" placeholder="email@example.com" class="email">
+        <input type="submit" class="button" value=">">
+      </form>
+    </div>
     <ul>
       <li><a href="">Home</a></li>
       <li><a href="">Location</a></li>
@@ -170,8 +185,10 @@
       <li><a href="">Contact</a></li>
     </ul>
     <img src="image/logo.png" class="logo-bottom" alt="logo">
-    <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
-    <p>CUPPA & COFFEE</p>
+    <div class="bottom">
+      <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
+      <p>CUPPA & COFFEE</p>
+    </div>
   </footer>
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvWAXSqNuPmf6VpaBLlRg9C-c-D-MjYUs&callback=initMap">

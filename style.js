@@ -22,11 +22,34 @@ function setMarkers(map) {
       map: map,
     })
   }
-
-  // const marker = new google.maps.Marker({
-  //   position: mitte,
-  //   map: map,
-  // });
-
 }
 
+function countdown () {
+  setInterval(() => {
+    const days = document.querySelector('.days');
+    const hours = document.querySelector('.hours');
+    const minutes = document.querySelector('.minutes');
+    const seconds = document.querySelector('.seconds'); 
+
+    
+    const today = new Date().getTime();
+    const openingDay = new Date('April 4, 2022 16:06:00').getTime();
+    let diff = openingDay - today;
+    if (diff < 0) {
+      diff = diff + 604800000;
+    }
+
+    const countdownDays = Math.floor(diff/1000/60/60/24);
+    const countdownHours = Math.floor((diff/1000/60/60)%24);
+    const countdownMinutes = Math.floor((diff/1000/60)%60);
+    const countdownSeconds = Math.floor((diff/1000)%60);
+    
+    days.innerHTML = countdownDays;
+    hours.innerHTML = countdownHours;
+    minutes.innerHTML = countdownMinutes;
+    seconds.innerHTML = countdownSeconds;
+
+  }, 1000);
+
+}
+countdown();
