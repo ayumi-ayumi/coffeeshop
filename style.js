@@ -56,35 +56,37 @@ function countdown () {
 countdown();
 
 //Humberger menu
-// const nav = document.querySelector('#navArea');
-// const btn = document.querySelector('.toggle-btn');
-// btn.onclick = () => {
-//   nav.classList.toggle('open');
-// };
+const nav = document.querySelector('#navArea');
+const btn = document.querySelector('.toggle-btn');
+btn.onclick = () => {
+  nav.classList.toggle('open');
+};
+
+const ul = document.querySelector('.ul');
+// console.log(a);
+ul.onclick = () => {
+  nav.classList.remove('open');
+}
 
 
 //Location slide
-// let slideIndex = 1;
-// showLocation(slideIndex);
+// let i = 0; //Start point
+// let locationCard = [];
+// let time = 2000;
 
-// function plusSlides(n) {
-//   showLocation(slideIndex += n);
-// }
+// locationCard[0] = document.querySelector('.mitte');
+// locationCard[1] = document.querySelector('.kreuzberg');
+// locationCard[2] = document.querySelector('.friedrichshain');
+// console.log(locationCard[2]);
 
-// function currentSlide(n) {
-//   showLocation(slideIndex = n);
-// }
-// function showLocation (n) {
-//   let i;
-//   let location = document.querySelector('.location');
-//   if (n > location.length) {
-//     slideIndex = 1
+// function changeCard () {
+//   if (i < locationCard.length - 1) {
+//     console.log(locationCard[i]);
+//     i++;
+//   } else {
+//     i = 0;
 //   }
-//   if (n < 1) {
-//     slideIndex = location.length
-//   }
-//   for (i = 0; i < location.length; i++) {
-//     location[i].style.display = 'none';
-//   }
-//   location[slideIndex-1].style.display = "block";
+//   locationCard[i].style.display = 'block';
+//   document.querySelector('.location-container').append(locationCard[i]);
+//   setTimeout('changeCard()', time);
 // }

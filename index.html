@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <div class="header-top">
       <div class="countdown">
         <div>We are opening in .....</div>
@@ -27,24 +27,22 @@
 
       <div class="top">
         <div><img src="/image/logo.png" class="logo" alt="logo" loading=”lazy”></div>
-        <div id="navArea">
-          <nav>
+          <nav id="navArea">
             <div class="navlist">
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Location</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Contact</a></li>
+              <ul class="ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
           </nav>
-        </div>
-        <div class="toggle-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
       </div>
     </div>
     
@@ -55,22 +53,22 @@
   </header>
     
   <main>
-    <div class="locations">
+    <div class="locations" id="location">
       <h2>Locations</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita dolor dolore? Modi id voluptate similique quaerat labore animi saepe necessitatibus, reprehenderit ducimus aspernatur obcaecati iusto, deserunt soluta repellat ab.</p>
 
-      <div class="location-container">
-        <div class="location">
+      <div class="location-container splide">
+        <div class="location mitte">
             <img src="./image/mitte.jpg" alt="Mitte" loading=”lazy”>
             <h4>Mitte</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam laboriosam veniam, obcaecati debitis, delectus aliquid repudiandae sit consectetur sapiente harum cupiditate architecto similique iusto, cumque suscipit reprehenderit quasi blanditiis?</p>
         </div>
-        <div class="location">
+        <div class="location kreuzberg">
             <img src="./image/kreuzberg.jpg" alt="Kreuzberg" loading=”lazy”>
             <h4>Kreuzberg</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, in nam. Id itaque deleniti earum recusandae, eos, impedit perspiciatis quod provident ab corrupti, aliquid amet quas accusantium sapiente odit delectus!</p>
         </div>
-        <div class="location">
+        <div class="location friedrichshain">
           <img src="./image/friedrichshain.jpg" alt="Friedrichshain" loading=”lazy”>
           <h4>Friedrichshain</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis cupiditate inventore? Porro deserunt, quisquam asperiores perspiciatis accusantium natus neque inventore non incidunt rem et expedita nulla illo ratione ducimus!</p>
@@ -81,7 +79,7 @@
       </div>
     </div>
     
-    <div class="menu">
+    <div class="menu" id="menu">
       <h2>Menu</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita dolor dolore? Modi id voluptate similique quaerat labore animi saepe necessitatibus, reprehenderit ducimus aspernatur obcaecati iusto, deserunt soluta repellat ab.</p>
       <div class="menus">
@@ -132,7 +130,7 @@
         </div>
       </div>
 
-      <div class="team">
+      <div class="team" id="team">
         <h2>Team</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque recusandae, deleniti tempore voluptatibus aut sunt sed quo accusantium quae, quisquam illum adipisci porro fugit reprehenderit laboriosam sapiente voluptatum id eveniet!</p>
         <div class="members">
@@ -159,7 +157,7 @@
   </main>
 
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <h2>Get in Touch</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam ducimus fugit dolorum modi qui necessitatibus reiciendis tempora tempore neque! Expedita, voluptate modi eligendi quibusdam illo cumque vitae accusantium incidunt?</p>
     <div class="map">
