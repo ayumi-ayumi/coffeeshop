@@ -24,6 +24,7 @@ function setMarkers(map) {
   }
 }
 
+//Countdown opening days
 function countdown () {
   setInterval(() => {
     const days = document.querySelector('.days');
@@ -53,3 +54,37 @@ function countdown () {
 
 }
 countdown();
+
+//Humberger menu
+// const nav = document.querySelector('#navArea');
+// const btn = document.querySelector('.toggle-btn');
+// btn.onclick = () => {
+//   nav.classList.toggle('open');
+// };
+
+
+//Location slide
+// let slideIndex = 1;
+// showLocation(slideIndex);
+
+// function plusSlides(n) {
+//   showLocation(slideIndex += n);
+// }
+
+// function currentSlide(n) {
+//   showLocation(slideIndex = n);
+// }
+// function showLocation (n) {
+//   let i;
+//   let location = document.querySelector('.location');
+//   if (n > location.length) {
+//     slideIndex = 1
+//   }
+//   if (n < 1) {
+//     slideIndex = location.length
+//   }
+//   for (i = 0; i < location.length; i++) {
+//     location[i].style.display = 'none';
+//   }
+//   location[slideIndex-1].style.display = "block";
+// }

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Coffee shop</title>
 </head>
+
 <body>
   <header>
     <div class="header-top">
@@ -23,17 +24,27 @@
         <div class="seconds"></div>
         <em>seconds</em>
       </div>
+
       <div class="top">
-        <h1><img src="/image/logo.png" class="logo" alt="logo" loading=”lazy”></h1>
-        <nav>
-          <ul class="navlist">
-            <li><a href="">Home</a></li>
-            <li><a href="">Location</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
+        <div><img src="/image/logo.png" class="logo" alt="logo" loading=”lazy”></div>
+        <div id="navArea">
+          <nav>
+            <div class="navlist">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Location</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
       </div>
     </div>
     
@@ -48,7 +59,7 @@
       <h2>Locations</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita dolor dolore? Modi id voluptate similique quaerat labore animi saepe necessitatibus, reprehenderit ducimus aspernatur obcaecati iusto, deserunt soluta repellat ab.</p>
 
-      <div class="locationCard">
+      <div class="location-container">
         <div class="location">
             <img src="./image/mitte.jpg" alt="Mitte" loading=”lazy”>
             <h4>Mitte</h4>
@@ -64,6 +75,9 @@
           <h4>Friedrichshain</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis cupiditate inventore? Porro deserunt, quisquam asperiores perspiciatis accusantium natus neque inventore non incidunt rem et expedita nulla illo ratione ducimus!</p>
         </div>
+        <br>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
       </div>
     </div>
     
@@ -172,10 +186,12 @@
   <footer>
     <div class="newsletter">
       <p>NEWS LETTER <br>GET NEWS</p>
-      <form action="">
-        <input type="email" placeholder="email@example.com" class="email">
-        <input type="submit" class="button" value=">">
-      </form>
+      <div class="form">
+        <form action="">
+          <input type="email" placeholder="email@example.com" class="email">
+          <input type="submit" class="button" value=">">
+        </form>
+      </div>
     </div>
     <ul>
       <li><a href="">Home</a></li>
