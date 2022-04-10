@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  background-color: rgb(223, 237, 248);
+  /* background-color: rgb(223, 237, 248); */
 }
 a {
   cursor: pointer;
 }
 header {
   margin: 0;
-  height: 660px;
+  height: 770px;
   background: url(/image/header_coffee.jpg);
   background-size: cover;
   /* position: relative; */
@@ -316,10 +316,13 @@ main {
 .contact {
   text-align: center;
   height: auto;
+  background-color: #f8f1ea;
 }
 .contact h2 {
   text-align: center;
   /* font-size: 2rem; */
+  background-color: #f8f1ea;
+
 }
 .contact p {
   width: 80%;
@@ -632,6 +635,8 @@ main {
   padding-top: 130px;
   margin-top: -150px;
   margin: 20px;
+  background-color: #f8f1ea;
+
 }
 .contact h2 {
   text-align: center;
@@ -911,7 +916,7 @@ footer ul li a:hover {
     object-fit: cover;
   }
   .section .left::after{
-    background-color: rgb(223, 237, 248);
+    background-color: #f4f8cf;
     width: 60%;
     height: 20%;
     position: absolute;
@@ -957,6 +962,9 @@ footer ul li a:hover {
     padding-top: 130px;
     margin-top: -150px;
     margin: 20px;
+    background-color: #f8f1ea;
+    margin: 0;
+
   }
   .contact h2 {
     text-align: center;
@@ -1144,16 +1152,18 @@ footer ul li a:hover {
   }
 
   .aboutus {
-    padding-top: 150px;
-    margin-top: -150px;
+    padding-top: 170px;
+    margin-top: -170px;
   }
   .aboutus h2 {
     font-size: 2rem;
+    margin: 0;
   }
   .aboutus-header {
     text-align: center;
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-bottom: 50px;
   }
 
   .section h3 {
@@ -1163,3 +1173,13 @@ footer ul li a:hover {
     width: 90%;
     margin: 0 auto;
   }
+  main {
+    background-color: #f4f8cf;
+    padding-top: 50px;
+  }
+
+
+  .newsletter p {
+    margin: 0;
+  }
+
