@@ -2,6 +2,9 @@ body {
   margin: 0;
   background-color: rgb(223, 237, 248);
 }
+a {
+  cursor: pointer;
+}
 header {
   margin: 0;
   height: 660px;
@@ -594,11 +597,12 @@ main {
 } */
 .images {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-top: 117px;
 }
 .images img {
- height: 200px;
- width: 200px;
+ height: 175px;
+ width: 240px;
  object-fit: cover;
  display: block;
 }
@@ -625,6 +629,9 @@ main {
 
 .contact {
   text-align: center;
+  padding-top: 130px;
+  margin-top: -150px;
+  margin: 20px;
 }
 .contact h2 {
   text-align: center;
@@ -915,11 +922,12 @@ footer ul li a:hover {
   }
   .images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 117px;
   }
   .images img {
-   height: 200px;
-   width: 200px;
+   height: 175px;
+   width: 240px;
    object-fit: cover;
    display: block;
   }
@@ -946,6 +954,9 @@ footer ul li a:hover {
   
   .contact {
     text-align: center;
+    padding-top: 130px;
+    margin-top: -150px;
+    margin: 20px;
   }
   .contact h2 {
     text-align: center;
@@ -1042,16 +1053,14 @@ footer ul li a:hover {
     font-size: .8rem;
     color: #cceaeece;
   }
-  
   }
 
-  .links {
+
+
+  .links-container {
     text-align: center;
     width: 70%;
     margin: 0 auto;
-  }
-   
-  .links-container {
     display: flex;
   }
   .links-container .card {
@@ -1080,28 +1089,77 @@ footer ul li a:hover {
     /* object-fit: cover; */
     background-size: cover;
   }
+  
   .card {
     position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
   }
-  .card .hover {
-    /* display: none; */
-    /* visibility: hidden; */
+  .img-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
   .card:hover .hover {
-    /* opacity: 0.5; */
     /* display: block; */
     visibility: visible;
   }
-  .card h4 {
+
+  .inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .inside h4 {
     font-size: 3rem;
     color: #fff;
     letter-spacing: 2px;
-    margin-top: 100px;
   }
-  .card .hover {
-    color: #fff;
+  .hover {
+    width: 90%;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
     position: absolute;
-    top: 180px;
-    left: 40px;
+    top: 176px;
+    left: 15px;
+  }
+  .hover p {
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 0.9rem;
+  }
+  .bg {
+    background-color: #1a7b18ab;
+    padding: 10px;
+    color: #fff;
+    font-weight: 100;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
 
-}
+  .aboutus {
+    padding-top: 150px;
+    margin-top: -150px;
+  }
+  .aboutus h2 {
+    font-size: 2rem;
+  }
+  .aboutus-header {
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .section h3 {
+    font-size: 2rem;
+  }
+  .right-caption {
+    width: 90%;
+    margin: 0 auto;
+  }

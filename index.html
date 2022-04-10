@@ -26,13 +26,17 @@
       </div>
 
       <div class="top">
-        <div><img src="/image/logo.png" class="logo" alt="logo" loading=”lazy”></div>
+        <div>
+          <a href="index.html">
+            <img src="/image/logo.png" class="logo" alt="logo" loading=”lazy”>
+          </a>
+        </div>
           <nav id="navArea">
             <div class="navlist">
               <ul class="ul">
-                <li><a href="#home">Home</a></li>
-                <li><a href="locations.html">locations</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
@@ -65,10 +69,10 @@
               <img src="image/menu_coffee1.jpg" alt="Coffee" loading=”lazy”>
             </div>
             <div class="right">
-              <h4>Beans</h4>
-              <p>Expresso</p>
-              <p>Cappucino</p>
-              <p>White late</p>
+              <div class="right-caption">
+                <h3>Beans</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptates adipisci tenetur quasi fugit amet aut eveniet alias laborum aliquam eius et est, saepe facere numquam corrupti nulla placeat id.</p>
+              </div>
               <div class="images">
                 <img src="image/menu_coffee2.jpg" alt="Coffee" loading=”lazy”>
                 <img src="image/menu_coffee3.jpg" alt="Coffee" loading=”lazy”>
@@ -80,10 +84,10 @@
               <img src="image/menu_food1.jpg" alt="Food" loading=”lazy”>
             </div>
             <div class="right">
-              <h4>Food</h4>
-              <p>Pizza</p>
-              <p>Pommes</p>
-              <p>Salad</p>
+              <div class="right-caption">
+                <h3>Barista</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur labore ipsa sunt illum amet, ad officia inventore eligendi, enim ipsum corrupti consequuntur ut! Accusantium aspernatur maxime velit aut ea?</p>
+              </div>
               <div class="images">
                 <img src="image/menu_food2.jpg" alt="Food" loading=”lazy”>
                 <img src="image/menu_food3.jpg" alt="Food" loading=”lazy”>
@@ -95,10 +99,10 @@
               <img src="image/menu_dessert3.jpg" alt="Dessert" loading=”lazy”>
             </div>
             <div class="right">
-              <h4>Quality & Sustainability</h4>
-              <p>Cookies</p>
-              <p>Cake</p>
-              <p>Donuts</p>
+              <div class="right-caption">
+                <h3>Quality & Sustainability</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolores obcaecati nam, nisi, voluptatibus velit fuga labore quod esse dignissimos illo ut minus voluptatum cumque id alias blanditiis recusandae. Eligendi.</p>
+              </div>
               <div class="images">
                 <img src="image/menu_dessert2.jpg" alt="Dessert" loading=”lazy”>
                 <img src="image/menu_dessert1.jpg" alt="Dessert" loading=”lazy”>
@@ -109,31 +113,42 @@
       </div>
     </div>
 
-    <div class="links">
       <div class="links-container">
         <div class="card menu">
-          <h4>Menu</h4>
-          <div class="hover">
-            <p>Coffee with Breakfast, Lunch</p>
-            <a href="">Check the menu</a>
-          </div>
+          <a href="" class="img-link">
+            <div class="inside">
+                <h4>Menu</h4>
+                <div class="hover">
+                  <p>Coffee with Breakfast, Lunch</p>
+                  <div class="bg"><p>Check the menu</p></div>
+                </div>
+            </div>
+          </a>
         </div>
         <div class="card locations">
-          <h4>Locations</h4>
-          <div class="hover">
-            <p>Come to see us</p>
-            <a href="">Visit!</a>
-          </div>
+          <a href="" class="img-link">
+            <div class="inside">
+                <h4>Locations</h4>
+                <div class="hover">
+                  <p>Come to see us</p>
+                  <div class="bg"><p>Visit!</p></div>
+                </div>
+            </div>
+          </a>
         </div>
         <div class="card team">
-          <h4>Team</h4>
-          <div class="hover">
-            <p>Feel the positive vibes</p>
-            <a href="">Get to know</a>
-          </div>
+          <a href="" class="img-link">
+            <div class="inside">
+                <h4>Team</h4>
+                <div class="hover">
+                  <p>Feel the positive vibes</p>
+                  <div class="bg"><p>Get to know</p></div>
+                </div>
+            </div>
+          </a>
         </div>
+
       </div>
-    </div>
   </main>
 
   
@@ -153,7 +168,7 @@
         <address>Friedrichshain: Frankfurter Tor 3, 10247 Berlin</address>
         <p>Tel: 03030303030303</p>
         <hr>
-        <p>Email: cuppaandcoffee@coffee.com</p>
+        <p>Email: <a href="mailto:cuppaandcoffee@coffee.com?Subject=Hello!">cuppaandcoffee@coffee.com</a></p>
       </div>
     </div>
     <div class="forms">
