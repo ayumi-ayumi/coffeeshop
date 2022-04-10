@@ -50,9 +50,7 @@ function countdown () {
     hours.innerHTML = countdownHours;
     minutes.innerHTML = countdownMinutes;
     seconds.innerHTML = countdownSeconds;
-
   }, 1000);
-
 }
 countdown();
 
@@ -74,8 +72,8 @@ const coffeeApi = async () => {
   try {
     let response = await fetch('https://api.sampleapis.com/coffee/hot')
     let coffee = await response.json()
-    console.log(coffee)
-    console.log(coffee[1].title);
+    // console.log(coffee);
+    // console.log(coffee[1].title);
 
     for (let i = 0; i < 10; i++) {
       let coffeemenu = document.querySelector('.coffeemenu');
@@ -97,6 +95,7 @@ const coffeeApi = async () => {
       
       // div: price(2-6€)
       let divPrice = document.createElement('div');
+      divPrice.classList.add('divPrice');
       let random = (Math.random() * 4) +2;
       let price =  random.toFixed(2);
       divPrice.innerHTML =  price + '€';
@@ -104,18 +103,102 @@ const coffeeApi = async () => {
       // Append
       divParent.append(divTitle, divLine, divPrice);
       coffeemenu.appendChild(divParent);
-
     }
-    
-
-
-
-
-
-
-
   } catch(error){
-    console.log(error)
+    // console.log(error);
   }
 }
 coffeeApi();
+
+// Review using randomuser & Kanye.rest
+const randomuser = async () => {
+  try {
+    let response = await fetch('https://randomuser.me/api/?results=10')
+    let users = await response.json();
+    let userList = users.results;
+
+    let kanye = await fetch('https://api.kanye.rest')
+    let quotes = await kanye.json();
+    let quote = quotes.quote;
+    // console.log(quote);
+
+    let reviewCard = document.querySelector('.review-card');
+    
+    let div = document.createElement('div');
+    let img = document.createElement('img');
+    let rate = document.createElement('div');
+    let p = document.createElement('p');
+    let pName = document.createElement('p');
+    
+    let image = userList[1].picture.large;
+    img.setAttribute('src', image);
+    
+    let rateNum = Math.floor((Math.random() * 6) + 0);
+    rate.innerHTML = rateNum;
+    
+    // let star1= document.querySelector('.star1');
+    // let star2 = document.querySelector('.star2');
+    // let star3 = document.querySelector('.star3');
+    // let star4 = document.querySelector('.star4');
+    // let star5 = document.querySelector('.star5');
+    
+    let divStar = document.createElement('div');
+    let star1= document.createElement('span');
+    star1.classList.add("fa", "fa-star", "star1");
+    let star2= document.createElement('span');
+    star2.classList.add("fa", "fa-star", "star2");
+    let star3= document.createElement('span');
+    star3.classList.add("fa", "fa-star", "star3");
+    let star4= document.createElement('span');
+    star4.classList.add("fa", "fa-star", "star4");
+    let star5= document.createElement('span');
+    star5.classList.add("fa", "fa-star", "star5");
+    divStar.append(star1, star2, star3, star4, star5);
+
+
+
+
+
+
+
+    for(let i = 0; i <= rateNum; i++) {
+      switch (rateNum) {
+        case 5:
+          star1.classList.add('checked');
+          star2.classList.add('checked');
+          star3.classList.add('checked');
+          star4.classList.add('checked');
+          star5.classList.add('checked');
+        break;
+        case 4:
+          star1.classList.add('checked');
+          star2.classList.add('checked');
+          star3.classList.add('checked');
+          star4.classList.add('checked');
+        break;
+        case 3:
+          star1.classList.add('checked');
+          star2.classList.add('checked');
+          star3.classList.add('checked');
+        break;
+        case 2:
+          star1.classList.add('checked');
+          star2.classList.add('checked');
+        break;
+        case 1:
+          star1.classList.add('checked');
+        break;
+      }
+    }
+
+    p.innerHTML = quote;
+    pName.innerHTML = userList[1].name.first;
+
+    div.append(img, p, pName, divStar);  
+    reviewCard.appendChild(div);
+
+  } catch(error){
+    // console.log(error);
+  }
+  }
+  randomuser();

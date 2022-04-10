@@ -1217,4 +1217,29 @@ footer ul li a:hover {
   flex: 0 1 auto;
 }
 
-.
+.review {
+  height: 400px;
+  width: 90%;
+  border: 1px solid #333;
+  margin: 0 auto;
+}
+.review-container {
+  height: 300px;
+  width: 90%;
+  border: 1px solid #333;
+  margin: 50px auto;
+}
+.review-card {
+  display: flex;
+  border: 1px solid #333;
+  width: 30%;
+}
+.review-card img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+.checked {
+  color: orange;
+}
