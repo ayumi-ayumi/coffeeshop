@@ -412,7 +412,7 @@ footer ul li a:hover {
 }
 
 /* Tablet responsibe */
-@media screen and (min-width:480px) and ( max-width:800px) {
+@media screen and (min-width:480px) and (max-width:800px) {
 .header-top {
     position: fixed;
     top: 0;
@@ -480,7 +480,8 @@ footer ul li a:hover {
   transition: .5s;
   color: rgb(92, 153, 51);
   display: inline-block;
-  animation: jello;
+  /* animation: jello; */
+  text-decoration: dashed;
   animation-duration: 0.8s;
 }
 .toggle-btn {
@@ -742,35 +743,36 @@ footer ul li a:hover {
       line-height: 60px;
     }
     
-    .days, .hours, .minutes, .seconds {
-      /* display: inline-block; */
-      line-height: 60px;
-      width: 20px;
-      height: 60px;
-      /* background-color: #fff; */
-      border-radius: 20%;
-      margin: 0 15px;
-    }
-    .top {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    background-color: #89CFD7;
-    opacity: 0.9;
+  .days, .hours, .minutes, .seconds {
+    /* display: inline-block; */
+    line-height: 60px;
+    width: 20px;
+    height: 60px;
+    /* background-color: #fff; */
+    border-radius: 20%;
+    margin: 0 15px;
   }
-    .logo {
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      top: 60px;
-      left:0;
-      z-index: 2;
-    }
+  .top {
+  display: flex;
+  justify-content: center;
+  background-color: #89CFD7;
+  opacity: 0.9;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left:0;
+    z-index: 2;
+  }
   .navlist {
     /* margin: 0; */
     height: 100px;
     display: flex;
     z-index: 4;
-    margin-right: 60px;
+    /* margin-right: 60px; */
+    width: 100%;
   }
   .navlist ul {
     margin: 0;
@@ -778,8 +780,9 @@ footer ul li a:hover {
   }
   .navlist li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
     line-height: 100px;
+    font-size: 1.2rem;
   }
   
   .navlist li a {
@@ -789,15 +792,18 @@ footer ul li a:hover {
     height: 100px;
     display: inline-block;
     width: 100px;
+    letter-spacing: 1px;
   }
   
   .navlist li a:hover {
     transition: .5s;
-    color: rgb(92, 153, 51);
+    color: rgb(117, 194, 66);
     display: inline-block;
-    animation: jello;
+    /* animation: jello; */
+    text-decoration: underline;
     animation-duration: 0.8s;
   }
+
   .toggle-btn {
     display: none;
   }
@@ -1036,5 +1042,66 @@ footer ul li a:hover {
     font-size: .8rem;
     color: #cceaeece;
   }
+  
+  }
+
+  .links {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+   
+  .links-container {
+    display: flex;
+  }
+  .links-container .card {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+  }
+  .links-container .menu {
+    background-image: url(./image/menu.jpg);
+    height: 300px;
+    width: 300px;
+    /* object-fit: cover; */
+    background-size: cover;
+  }
+  .links-container .locations {
+    background-image: url(./image/locations.jpg);
+    height: 300px;
+    width: 300px;
+    /* object-fit: cover; */
+    background-size: cover;
+  }
+  .links-container .team {
+    background-image: url(./image/team.jpg);
+    height: 300px;
+    width: 300px;
+    /* object-fit: cover; */
+    background-size: cover;
+  }
+  .card {
+    position: relative;
+  }
+  .card .hover {
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+  .card:hover .hover {
+    /* opacity: 0.5; */
+    /* display: block; */
+    visibility: visible;
+  }
+  .card h4 {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 100px;
+  }
+  .card .hover {
+    color: #fff;
+    position: absolute;
+    top: 180px;
+    left: 40px;
 
 }
