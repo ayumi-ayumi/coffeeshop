@@ -1182,4 +1182,39 @@ footer ul li a:hover {
   .newsletter p {
     margin: 0;
   }
+.menu {
+  height: 900px;
+}
+.menu-main {
+  padding-top: 200px;
+  /* opacity: 0.6; */
+}
+.menu-container {
+  height: 570px;
+  background-color: #49b2bd62;
+  width: 80%;
+  margin: 0 auto;
+}
+.menu-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 30px;
+}
+.divParent {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto 10px;
+}
+.divLine {
+  padding: 5px 15px;
+  flex-grow: 2
+}
+.divLine hr{
+  border-style: dotted;
+}
+.divPrict, .divTitle {
+  flex: 0 1 auto;
+}
 
+.

@@ -1,3 +1,4 @@
+// Google map API
 function initMap() {
   const center = { lat:52.50811483534891, lng: 13.426003939561651};
   const map = new google.maps.Map(document.getElementById('map'), {
@@ -68,25 +69,53 @@ ul.onclick = () => {
   nav.classList.remove('open');
 }
 
+// coffee menu API
+const coffeeApi = async () => {
+  try {
+    let response = await fetch('https://api.sampleapis.com/coffee/hot')
+    let coffee = await response.json()
+    console.log(coffee)
+    console.log(coffee[1].title);
 
-//Location slide
-// let i = 0; //Start point
-// let locationCard = [];
-// let time = 2000;
+    for (let i = 0; i < 10; i++) {
+      let coffeemenu = document.querySelector('.coffeemenu');
+  
+      // Create tabs and class 
+      let divParent = document.createElement('div');
+      divParent.classList.add('divParent');
+      
+      // div: title
+      let divTitle = document.createElement('div');
+      divTitle.classList.add('divTitle');
+      divTitle.innerHTML = coffee[i].title;
+      
+      // div: hr
+      let divLine = document.createElement('div');
+      divLine.classList.add('divLine');
+      let hr = document.createElement('hr');
+      divLine.appendChild(hr);
+      
+      // div: price(2-6€)
+      let divPrice = document.createElement('div');
+      let random = (Math.random() * 4) +2;
+      let price =  random.toFixed(2);
+      divPrice.innerHTML =  price + '€';
+  
+      // Append
+      divParent.append(divTitle, divLine, divPrice);
+      coffeemenu.appendChild(divParent);
 
-// locationCard[0] = document.querySelector('.mitte');
-// locationCard[1] = document.querySelector('.kreuzberg');
-// locationCard[2] = document.querySelector('.friedrichshain');
-// console.log(locationCard[2]);
+    }
+    
 
-// function changeCard () {
-//   if (i < locationCard.length - 1) {
-//     console.log(locationCard[i]);
-//     i++;
-//   } else {
-//     i = 0;
-//   }
-//   locationCard[i].style.display = 'block';
-//   document.querySelector('.location-container').append(locationCard[i]);
-//   setTimeout('changeCard()', time);
-// }
+
+
+
+
+
+
+  } catch(error){
+    console.log(error)
+  }
+}
+coffeeApi();
