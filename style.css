@@ -1421,13 +1421,13 @@ margin: 50px;
   }
   .section .left::after{
     background-color: #f4f8cf;
-    width: 60%;
-    height: 20%;
+    width: 74%;
+    height: 120%;
     position: absolute;
     content: '';
     z-index: 0;
     bottom: -20%;
-    left: 0;
+    left: -85px;
   }
   .images {
     display: flex;
@@ -1592,7 +1592,26 @@ margin: 50px;
     font-size: .8rem;
     color: #cceaeece;
   }
-
+  /* team.html */
+  .team-header {
+    height: 1000px;
+  }
+  .teampage {
+    padding-top: 180px;
+    text-align: center;
+  }
+  .teampage h2 {
+    font-size: 2.5rem;
+  }
+  .teampage p {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .team-card {
+    margin: 20px auto!important;
+  }
+  
   .links-container {
     text-align: center;
     width: 80%;
