@@ -160,7 +160,7 @@ header {
   }
   /* team.html starts*/
 .team-header {
-  height: 2400px;
+  height: 1730px;
 }
 .teampage {
   text-align: center;
@@ -237,9 +237,7 @@ main {
   position: relative;
   margin: auto;
 }
-.location {
-  /* display: none; */
-}
+
 .location h4 {
   font-size: 1.5rem;
   text-align: center;
@@ -257,7 +255,7 @@ main {
 .location p {
   width: 90%;
 }
-.menu {
+#homem {
   height: auto;
 }
 .menu h2 {
@@ -542,12 +540,15 @@ main {
 .newsletter p {
   margin: 0;
 }
-.menu {
-/* height: 700px; */
+#loc {
+height: 1420px;
+}
+.menu, .men {
+  height: 800px;
 }
 
 .menu-container {
-height: 550px;
+height: 630px;
 background-color: #49b2bd62;
 width: 80%;
 margin: 0 auto;
