@@ -70,6 +70,8 @@ header {
   .menu-main {
     padding-top: 95px;
   }
+  /* menu.html ends */
+
   .logo {
     width: 50px;
     height: 50px;
@@ -217,18 +219,21 @@ main {
 
 .locations h2 {
   text-align: center;
-  /* font-size: 2rem; */
+  padding-top: 100px;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .locations p {
   font-size: 0.8rem;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .location-container {
-  max-width: 450px;
+  /* max-width: 450px; */
+  width: 100%;
   position: relative;
   margin: auto;
 }
@@ -237,10 +242,12 @@ main {
 }
 .location h4 {
   font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
 }
 .location img {
-  height: 300px;
-  width: 420px;
+  width: 80%;
+  height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -536,7 +543,7 @@ main {
   margin: 0;
 }
 .menu {
-height: 700px;
+/* height: 700px; */
 }
 
 .menu-container {
@@ -806,7 +813,7 @@ main {
   display: block;
   margin: 0 auto;
   border-radius: 1%;
-  box-shadow: 15px 15px rgb(250, 245, 245);
+  box-shadow: 25px 25px rgb(250, 245, 245);
 }
 .location p {
   width: 90%;
