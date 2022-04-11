@@ -211,10 +211,30 @@ const randomuser = async () => {
 
       let emailex = document.querySelector('#emailex');
       let pwdex = document.querySelector('#pwdex');
-      emailex.innerHTML = userList[1].email;
-      pwdex.innerHTML = userList[1].login.password;
+
+      let emailadress = userList[1].email;
+      let password = userList[1].login.password;
+      emailex.innerHTML = emailadress;
+      pwdex.innerHTML = password;
       console.log(pwdex);
+
+
+      let email = document.querySelector('#email');
+      let pwd = document.querySelector('#pwd');
+
+      let button = document.querySelector('#button');
       
+      button.addEventListener('click', ()=>{
+        console.log(email.value);
+        // for (let i = 0; i < userList.length; i++) {
+          if (email.value === emailadress || pwd.value === password) {
+            alert('Welcome Back!');
+          } else {
+            alert('Check your email or password');
+          }
+        // }
+      });
+
     } catch(error){
       // console.log(error);
     }
@@ -222,5 +242,3 @@ const randomuser = async () => {
     example();
 
     // Login
-
-    
