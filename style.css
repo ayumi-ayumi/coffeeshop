@@ -632,7 +632,7 @@ main {
 
 .contact {
   text-align: center;
-  padding-top: 130px;
+  padding-top: 80px;
   margin-top: -150px;
   margin: 20px;
   background-color: #f8f1ea;
@@ -959,7 +959,7 @@ footer ul li a:hover {
   
   .contact {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 80px;
     margin-top: -150px;
     margin: 20px;
     background-color: #f8f1ea;
@@ -1218,28 +1218,106 @@ footer ul li a:hover {
 }
 
 .review {
-  height: 400px;
+  height: 370px;
   width: 90%;
-  border: 1px solid #333;
   margin: 0 auto;
+
 }
 .review-container {
   height: 300px;
-  width: 90%;
-  border: 1px solid #333;
+  width: 100%;
   margin: 50px auto;
 }
 .review-card {
   display: flex;
-  border: 1px solid #333;
-  width: 30%;
+  justify-content: space-evenly;
+  text-align: center;
 }
-.review-card img{
+.onereview img{
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   display: block;
+  margin: 10px auto;
+}
+.onereview {
+  border: 1px solid #333;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 20px 0;
+  background-color: #f7f9e4;
+  width: 25%;
+}
+.quote {
+  /* font-size: 0.7rem; */
+  font-style: italic;
+  width: 80%;
+  margin: 0 auto;
 }
 .checked {
   color: orange;
+}
+
+.container {
+  position: relative;
+  background: #f4f8cf;
+  height: 28vh;
+}
+
+.wave {
+  position: absolute;
+  height: 161px;
+  width: 100%;
+  background: #f4f8cf;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: #f4f8cf;
+  right: -1.5%;
+  top: 40%;
+}
+.wave::after {
+  width: 55%;
+  height: 109%;
+  background-color: #f8f1ea;
+  left: -1.5%;
+  top: 60%;
+}
+.form {
+  height: 700px;
+  width: 60%;
+}
+.mypage {
+  background-color: #445c5f5e;
+  height: 500px;
+  padding: 20px;
+}
+.mypage h2 {
+  letter-spacing: 2px;
+}
+.login {
+  font-size: 1.2rem;
+}
+#email, #pwd {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+}
+#button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+}
+.example {
+  margin: 50px;
 }

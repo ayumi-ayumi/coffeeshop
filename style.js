@@ -117,88 +117,110 @@ const randomuser = async () => {
     let users = await response.json();
     let userList = users.results;
 
-    let kanye = await fetch('https://api.kanye.rest')
-    let quotes = await kanye.json();
-    let quote = quotes.quote;
-    // console.log(quote);
+    let friends = await fetch('https://friends-quotes-api.herokuapp.com/quotes')
+    let quotes = await friends.json();
+    // let quote = quotes.quote;
+    console.log(quotes);
 
-    let reviewCard = document.querySelector('.review-card');
-    
-    let div = document.createElement('div');
-    let img = document.createElement('img');
-    let rate = document.createElement('div');
-    let p = document.createElement('p');
-    let pName = document.createElement('p');
-    
-    let image = userList[1].picture.large;
-    img.setAttribute('src', image);
-    
-    let rateNum = Math.floor((Math.random() * 6) + 0);
-    rate.innerHTML = rateNum;
-    
-    // let star1= document.querySelector('.star1');
-    // let star2 = document.querySelector('.star2');
-    // let star3 = document.querySelector('.star3');
-    // let star4 = document.querySelector('.star4');
-    // let star5 = document.querySelector('.star5');
-    
-    let divStar = document.createElement('div');
-    let star1= document.createElement('span');
-    star1.classList.add("fa", "fa-star", "star1");
-    let star2= document.createElement('span');
-    star2.classList.add("fa", "fa-star", "star2");
-    let star3= document.createElement('span');
-    star3.classList.add("fa", "fa-star", "star3");
-    let star4= document.createElement('span');
-    star4.classList.add("fa", "fa-star", "star4");
-    let star5= document.createElement('span');
-    star5.classList.add("fa", "fa-star", "star5");
-    divStar.append(star1, star2, star3, star4, star5);
+    for (let i = 0; i < 4; i++) {
 
-
-
-
-
-
-
-    for(let i = 0; i <= rateNum; i++) {
-      switch (rateNum) {
-        case 5:
-          star1.classList.add('checked');
-          star2.classList.add('checked');
-          star3.classList.add('checked');
-          star4.classList.add('checked');
-          star5.classList.add('checked');
-        break;
-        case 4:
-          star1.classList.add('checked');
-          star2.classList.add('checked');
-          star3.classList.add('checked');
-          star4.classList.add('checked');
-        break;
-        case 3:
-          star1.classList.add('checked');
-          star2.classList.add('checked');
-          star3.classList.add('checked');
-        break;
-        case 2:
-          star1.classList.add('checked');
-          star2.classList.add('checked');
-        break;
-        case 1:
-          star1.classList.add('checked');
-        break;
+      let reviewCard = document.querySelector('.review-card');
+      
+      let div = document.createElement('div');
+      div.classList.add('onereview');
+      let img = document.createElement('img');
+      let rate = document.createElement('div');
+      let p = document.createElement('p');
+      p.classList.add('quote');
+      let pName = document.createElement('p');
+      
+      let image = userList[i].picture.large;
+      img.setAttribute('src', image);
+      
+      let rateNum = Math.floor((Math.random() * 6) + 0);
+      rate.innerHTML = rateNum;
+      
+      // let star1= document.querySelector('.star1');
+      // let star2 = document.querySelector('.star2');
+      // let star3 = document.querySelector('.star3');
+      // let star4 = document.querySelector('.star4');
+      // let star5 = document.querySelector('.star5');
+      
+      let divStar = document.createElement('div');
+      let star1= document.createElement('span');
+      star1.classList.add("fa", "fa-star", "star1");
+      let star2= document.createElement('span');
+      star2.classList.add("fa", "fa-star", "star2");
+      let star3= document.createElement('span');
+      star3.classList.add("fa", "fa-star", "star3");
+      let star4= document.createElement('span');
+      star4.classList.add("fa", "fa-star", "star4");
+      let star5= document.createElement('span');
+      star5.classList.add("fa", "fa-star", "star5");
+      divStar.append(star1, star2, star3, star4, star5);
+  
+      for(let i = 0; i <= rateNum; i++) {
+        switch (rateNum) {
+          case 5:
+            star1.classList.add('checked');
+            star2.classList.add('checked');
+            star3.classList.add('checked');
+            star4.classList.add('checked');
+            star5.classList.add('checked');
+          break;
+          case 4:
+            star1.classList.add('checked');
+            star2.classList.add('checked');
+            star3.classList.add('checked');
+            star4.classList.add('checked');
+          break;
+          case 3:
+            star1.classList.add('checked');
+            star2.classList.add('checked');
+            star3.classList.add('checked');
+          break;
+          case 2:
+            star1.classList.add('checked');
+            star2.classList.add('checked');
+          break;
+          case 1:
+            star1.classList.add('checked');
+          break;
+        }
       }
+  
+      p.innerHTML = quotes[i].quote;
+      pName.innerHTML = userList[i].name.first;
+  
+      div.append(img, p, pName, divStar);  
+      reviewCard.appendChild(div);
     }
-
-    p.innerHTML = quote;
-    pName.innerHTML = userList[1].name.first;
-
-    div.append(img, p, pName, divStar);  
-    reviewCard.appendChild(div);
 
   } catch(error){
     // console.log(error);
   }
   }
   randomuser();
+
+  // Example: email, password
+  const example = async () => {
+    try {
+      let response = await fetch('https://randomuser.me/api/?results=10')
+      let users = await response.json();
+      let userList = users.results;
+
+      let emailex = document.querySelector('#emailex');
+      let pwdex = document.querySelector('#pwdex');
+      emailex.innerHTML = userList[1].email;
+      pwdex.innerHTML = userList[1].login.password;
+      console.log(pwdex);
+      
+    } catch(error){
+      // console.log(error);
+    }
+    }
+    example();
+
+    // Login
+
+    

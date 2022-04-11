@@ -150,17 +150,17 @@
           </a>
         </div>
       </div>
+      <div class="review">
+        <div class="review-container">
+          <div class="review-card"></div>
+        </div>
+      </div>
   </main>
 
+  <section class="container">
+    <div class="wave"></div>
+  </section>
 
-  <div class="review">
-    <div class="review-container">
-      <div class="review-card">
-      </div>
-    </div>
-
-
-  </div>
 
   <div class="contact" id="contact">
     <h2>Get in Touch</h2>
@@ -181,9 +181,32 @@
         <p>Email: <a href="mailto:cuppaandcoffee@coffee.com?Subject=Hello!">cuppaandcoffee@coffee.com</a></p>
       </div>
     </div>
-    <div class="forms">
-
-    </div>
+    
+          <form class="form">
+            <div class="mypage">
+              <h2>LOGIN</h2>
+              <div class="login">
+                <div class="emailform">
+                  <form action="/action_page.php">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                  </form>
+                </div>
+                <div class="password">
+                  <form>
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd">
+                  </form>
+                </div>
+                <button type="button" id="button" onClick="login();">LOG IN</button>
+              </div>
+              <div class="example">
+                <p>Example:</p>
+                <div id="emailex"></div>
+                <div id="pwdex"></div>
+              </div>
+            </div>
+          </form>
   </div>
 
 
