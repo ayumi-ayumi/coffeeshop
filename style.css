@@ -215,7 +215,6 @@ main {
   max-width: 450px;
   position: relative;
   margin: auto;
-  /* width: 60%; */
 }
 .location {
   /* display: none; */
@@ -1251,7 +1250,9 @@ margin: 50px;
       width: 100%;
       z-index: 5;
     }
-    
+  .locations-header {
+    height: 1000px;
+  }
     .countdown {
       width: auto;
       height: 60px;
@@ -1344,22 +1345,22 @@ margin: 50px;
     height: auto;
   }
   
-  .locations h2 {
+  .locations-header h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-top: 180px;
   }
   
-  .locations p {
+  .locations-header p {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .location-container {
     display: flex;
     justify-content: space-evenly;
     height: auto;
-    width: 100%;
   }
   .location h4 {
     font-size: 1.5rem;
