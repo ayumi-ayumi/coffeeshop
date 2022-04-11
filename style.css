@@ -801,6 +801,7 @@ main {
 .locations h2 {
   text-align: center;
   font-size: 2rem;
+  padding-top: 200px;
 }
 
 .locations p {
@@ -810,32 +811,31 @@ main {
 }
 
 .location-container {
-  /* display: flex; */
-  height: auto;
-  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  /* height: auto; */
+  width: 100%;
   margin: 0 auto;
 }
 .location h4 {
   font-size: 1.5rem;
 }
 .location {
-  /* display: none; */
-  text-align: center;
-  /* width: 33%; */
-  margin: 0 auto;
-  width: 80%;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    width: 100%;
 }
 .location img {
-  height: 300px;
-  width: 420px;
+  height: 186px;
+  width: 300px;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
   border-radius: 1%;
-  box-shadow: 25px 25px rgb(250, 245, 245);
+  box-shadow: 12px 12px rgb(250 245 245);
 }
 .location p {
-  width: 90%;
+  width: 100% !important;
 }
 
 .menu h2 {
