@@ -11,6 +11,7 @@ header {
   height: 700px;
   background: url(/image/header_coffee.jpg);
   background-size: cover;
+  width: 100px;
 }
 
 .countdown em {
@@ -42,10 +43,11 @@ header {
 
   header {
     margin: 0;
-    height: 800px;
+    height: 430px;
     background: url(/image/header_coffee.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    width: 100%;
   }  
   .header-top {
     position: fixed;
@@ -201,8 +203,8 @@ header {
 }
 
 .headerMain h1 {
-  /* font-size: 3rem; */
-  /* margin-top: 100px; */
+  font-size: 3rem;
+  margin-top: 100px;
   letter-spacing: 4px;
 }
 
@@ -213,9 +215,10 @@ header {
   font-size: 0.8rem;
 }
 
-main {
-  height: auto;
-}
+
+
+
+
 
 .locations h2 {
   text-align: center;
@@ -269,10 +272,18 @@ main {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+
+/* index.html */
+.aboutus-main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 .section {
-  /* display: flex; */
-  /* justify-content: space-evenly; */
-  width: 95%;
+  width: 100%;
   /* height: 600px; */
   margin: 0 auto;
   background-color: #fff;
@@ -286,8 +297,8 @@ main {
   background-color: #fff;
 }
 .section .left img{
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: 100%;
   z-index: 3;
   display: block;
   /* position: relative; */
@@ -304,31 +315,28 @@ main {
   left: 0; */
 }
 .images {
-  /* display: flex; */
-  /* justify-content: space-around; */
+  display: flex;
+  justify-content: space-between;
 }
 .images img {
- height: 300px;
- width: 300px;
- object-fit: cover;
- display: block;
+  height: auto;
+  width: 48%;
+  object-fit: cover;
+  display: block;
 }
 .section .right {
   /* width: 600px; */
 }
-
+.info hr {
+  display: none;
+}
 
 
 .contact {
   text-align: center;
-  height: auto;
+  height: 1400px;
   background-color: #f8f1ea;
-}
-.contact h2 {
-  text-align: center;
-  /* font-size: 2rem; */
-  background-color: #f8f1ea;
-
+  padding-top: 120px;
 }
 .contact p {
   width: 80%;
@@ -510,8 +518,8 @@ footer ul li a:hover {
 }
 
 .aboutus {
-  padding-top: 170px;
-  margin-top: -170px;
+  padding-top: 45px;
+  margin-top: -45px;
 }
 .aboutus h2 {
   font-size: 2rem;
@@ -534,6 +542,7 @@ footer ul li a:hover {
 main {
   background-color: #f4f8cf;
   padding-top: 50px;
+  height: 3570px;
 }
 
 
@@ -576,8 +585,8 @@ flex: 0 1 auto;
 }
 
 .review {
-height: 370px;
-width: 90%;
+height: 900px;
+width: 70%;
 margin: 0 auto;
 
 }
@@ -588,23 +597,24 @@ margin: 50px auto;
 }
 .review-card {
 display: flex;
+flex-direction:column;
 justify-content: space-evenly;
 text-align: center;
-}
-.onereview img{
-border-radius: 50%;
-height: 120px;
-width: 120px;
-display: block;
-margin: 10px auto;
 }
 .onereview {
 border: 1px solid #333;
 border-radius: 3px;
-margin: 0 10px;
-padding: 20px 0;
+margin: 5px;
+/* padding: 20px 0; */
 background-color: #f7f9e4;
-width: 25%;
+width: 100%;
+}
+.onereview img{
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  display: block;
+  margin: 5px auto
 }
 .quote {
 /* font-size: 0.7rem; */
@@ -619,7 +629,7 @@ color: orange;
 .container {
 position: relative;
 background: #f4f8cf;
-height: 170px;
+height: 160px;
 }
 
 .wave {
@@ -652,8 +662,8 @@ left: -1.5%;
 top: 60%;
 }
 .form1 {
-height: 500px;
-width: 60%;
+/* height: 500px; */
+width: 80%;
 margin: auto;
 }
 .mypage {
