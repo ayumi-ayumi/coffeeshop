@@ -215,7 +215,10 @@ header {
   font-size: 0.8rem;
 }
 
-
+.loc-contact {
+  padding-top: 0 !important;
+  height: 830px !important;
+}
 
 
 
@@ -1481,7 +1484,7 @@ margin: 50px;
   .images {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 193px;
+    margin-top: 144px;
   }
   .images img {
    height: 175px;
@@ -1768,6 +1771,7 @@ margin: 50px;
   .right-caption {
     width: 90%;
     margin: 0 auto;
+    margin-top: 50px;
   }
   main {
     background-color: #f4f8cf;
