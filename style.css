@@ -11,7 +11,7 @@ header {
   height: 700px;
   background: url(/image/header_coffee.jpg);
   background-size: cover;
-  width: 100px;
+  width: 100%;
 }
 
 .countdown em {
@@ -626,10 +626,11 @@ margin: 0 auto;
 color: orange;
 }
 
-.container {
+.wave-container {
 position: relative;
 background: #f4f8cf;
 height: 160px;
+width: 100%;
 }
 
 .wave {
@@ -1198,10 +1199,11 @@ margin: 0 auto;
 color: orange;
 }
 
-.container {
+.wave-container {
 position: relative;
 background: #f4f8cf;
 height: 170px;
+width: 100%;
 }
 
 .wave {
@@ -1454,7 +1456,7 @@ margin: 50px;
   .images {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 103px;
+    margin-top: 193px;
   }
   .images img {
    height: 175px;
@@ -1486,7 +1488,7 @@ margin: 50px;
   
   .contact {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 140px;
     margin-top: -150px;
     margin: 20px;
     background-color: #f8f1ea;
@@ -1825,10 +1827,11 @@ margin: 50px;
   color: orange;
 }
 
-.container {
+.wave-container {
   position: relative;
   background: #f4f8cf;
   height:170px;
+  width: 100%;
 }
 
 .wave {
@@ -2048,7 +2051,7 @@ margin: 50px;
   color: orange;
 }
 
-.container {
+.wave-container {
   position: relative;
   background: #f4f8cf;
   height: 170px;
