@@ -35,7 +35,7 @@ function countdown () {
 
     
     const today = new Date().getTime();
-    const openingDay = new Date('April 4, 2022 16:06:00').getTime();
+    const openingDay = new Date('April 18, 2022 16:06:00').getTime();
     let diff = openingDay - today;
     if (diff < 0) {
       diff = diff + 604800000;
