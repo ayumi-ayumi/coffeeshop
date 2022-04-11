@@ -9,11 +9,10 @@ a {
 header {
   margin: 0;
   height: 700px;
-  background: url(/image/header_coffee.jpg);
+  background: url(image/header_coffee.jpg);
   background-size: cover;
   width: 100%;
 }
-
 .countdown em {
   font-style: normal;
 }
