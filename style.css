@@ -608,7 +608,7 @@ color: orange;
 .container {
 position: relative;
 background: #f4f8cf;
-height: 28vh;
+height: 170px;
 }
 
 .wave {
@@ -1179,7 +1179,7 @@ color: orange;
 .container {
 position: relative;
 background: #f4f8cf;
-height: 28vh;
+height: 170px;
 }
 
 .wave {
@@ -1806,7 +1806,7 @@ margin: 50px;
 .container {
   position: relative;
   background: #f4f8cf;
-  height: 25vh;
+  height:170px;
 }
 
 .wave {
@@ -2029,7 +2029,7 @@ margin: 50px;
 .container {
   position: relative;
   background: #f4f8cf;
-  height: 25vh;
+  height: 170px;
 }
 
 .wave {
