@@ -17,7 +17,6 @@ header {
   font-style: normal;
 }
 
-
 /* mobile responsive */
 @media screen and (max-width:480px)  {
 
@@ -1294,108 +1293,12 @@ margin: 50px;
 }
 
 @media screen and (min-width:1080px) {
-  .header-top {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 5;
-    }
+
+  /* style for locations.html */
   .locations-header {
     height: 1000px;
   }
-    .countdown {
-      width: auto;
-      height: 60px;
-      background-color: #445c5f;
-      display: flex;
-      justify-content: center;
-      color: #fff;
-      line-height: 60px;
-    }
-    
-  .days, .hours, .minutes, .seconds {
-    line-height: 60px;
-    width: 20px;
-    height: 60px;
-    border-radius: 20%;
-    margin: 0 15px;
-  }
-  .top {
-  display: flex;
-  justify-content: center;
-  background-color: #89CFD7;
-  opacity: 0.9;
-  }
-  .logo {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 60px;
-    left:0;
-    z-index: 2;
-  }
-  .navlist {
-    height: 100px;
-    display: flex;
-    z-index: 4;
-    width: 100%;
-  }
-  .navlist ul {
-    margin: 0;
-    padding: 0;
-  }
-  .navlist li {
-    display: inline;
-    margin: 0 20px;
-    line-height: 100px;
-    font-size: 1.2rem;
-  }
-  
-  .navlist li a {
-    text-decoration: none;
-    text-align: center;
-    color: #dbe6e8fe;
-    height: 100px;
-    display: inline-block;
-    width: 100px;
-    letter-spacing: 1px;
-  }
-  
-  .navlist li a:hover {
-    transition: .5s;
-    color: rgb(117, 194, 66);
-    display: inline-block;
-    /* animation: jello; */
-    text-decoration: underline;
-    animation-duration: 0.8s;
-  }
 
-  .toggle-btn {
-    display: none;
-  }
-  
-  .headerMain {
-    text-align: center;
-    padding-top: 230px;
-  }
-  
-  .headerMain h1 {
-    font-size: 4rem;
-    margin-top: 15px;
-    letter-spacing: 4px;
-  }
-  
-  .headerMain p {
-    margin-top: 60px;
-    width: 500px;
-    margin: 0 auto;
-  }
-  
-  main {
-    height: auto;
-  }
-  
   .locations-header h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -1413,9 +1316,11 @@ margin: 50px;
     justify-content: space-evenly;
     height: auto;
   }
+
   .location h4 {
     font-size: 1.5rem;
   }
+
   .location {
     /* flex: 1; */
     /* display: none; */
@@ -1424,6 +1329,7 @@ margin: 50px;
     margin: 0 auto;
     /* width: 80%; */
   }
+
   .location img {
     height: 300px;
     width: 90%;
@@ -1433,19 +1339,167 @@ margin: 50px;
     border-radius: 1%;
     box-shadow: 15px 15px rgb(250, 245, 245);
   }
+
   .location p {
     width: 90%;
   }
   
+   /* style for menu.html */
   .menu h2 {
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
   }
+
   .menu p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  }
+
+   /* Style for team.html */
+  .members {
+  display: flex;
+  }
+  .member {
+  text-align: center;
+  }
+  .member img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 20px 20px rgb(253, 247, 247);
+  }
+  .member p {
+  width: 80%;
+  }
+
+  /* style for all pages */
+  .header-top {
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    z-index: 5;
+  }
+
+  .countdown {
+    /* width: auto; */
+    height: 60px;
+    background-color: #445c5f;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    line-height: 60px;
+  }
+    
+  .days, .hours, .minutes, .seconds {
+    line-height: 60px;
+    width: 20px;
+    height: 60px;
+    border-radius: 20%;
+    margin: 0 15px;
+  }
+
+  .top {
+  display: flex;
+  justify-content: center;
+  background-color: #89CFD7;
+  opacity: 0.9;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left:0;
+    z-index: 2;
+  }
+
+  .navlist {
+    height: 100px;
+    display: flex;
+    z-index: 4;
+    width: 100%;
+  }
+
+  .navlist ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navlist li {
+    display: inline;
+    margin: 0 20px;
+    line-height: 100px;
+    font-size: 1.2rem;
+  }
+  
+  .navlist li a {
+    text-decoration: none;
+    text-align: center;
+    color: #dbe6e8fe;
+    height: 100px;
+    display: inline-block;
+    width: 100px;
+    letter-spacing: 0.9px;
+  }
+  
+  .navlist li a:hover {
+    transition: 0.5s;
+    color: #00ff6ec5;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    animation-duration: 0.8s;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+  
+  .headerMain {
+    text-align: center;
+    padding-top: 230px;
+  }
+  
+  .headerMain h1 {
+    font-size: 4rem;
+    margin-top: 15px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: #00ff6ec5 1px 0 10px;
+  }
+  
+  .headerMain p {
+    margin-top: 60px;
+    width: 500px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: #00ff6ec5 1px 0 10px;
+  }
+  
+  main {
+    height: auto;
+  }
+  
+  .aboutus {
+    padding-top: 170px;
+    margin-top: -170px;
+  }
+
+  .aboutus h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .aboutus-header {
+    text-align: center;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 20px;
+    padding-bottom: 50px;
   }
+
   .section {
     display: flex;
     justify-content: space-evenly;
@@ -1455,6 +1509,7 @@ margin: 50px;
     background-color: #fff;
     margin-bottom: 30px;
   }
+
   .section .left{
     position: relative;
     width: 500px;
@@ -1462,6 +1517,7 @@ margin: 50px;
     z-index: 1;
     background-color: #fff;
   }
+
   .section .left img{
     height: 500px;
     width: 500px;
@@ -1470,6 +1526,7 @@ margin: 50px;
     position: relative;
     object-fit: cover;
   }
+
   .section .left::after{
     background-color: #f4f8cf;
     width: 74%;
@@ -1478,51 +1535,170 @@ margin: 50px;
     content: '';
     z-index: 0;
     bottom: -20%;
-    left: -85px;
+    left: -200px;
   }
+
   .images {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 144px;
+    /* margin-top: 144px; */
   }
+
   .images img {
-   height: 175px;
-   width: 240px;
-   margin: 10px;
-   object-fit: cover;
-   display: block;
+    height: 100%;
+    width: 240px;
+    /* margin: 10px; */
+    object-fit: cover;
+    display: block;
   }
+
   .section .right {
     width: 600px;
-  }
-  
-  .members {
+    height: 500px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+  .right-caption {
+    width: 90%;
+    margin: 50px auto;
   }
-  .member {
-    text-align: center;
+
+  .right-caption h3 {
+    font-size: 2rem;
   }
-  .member img {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 20px 20px rgb(253, 247, 247);
-  }
-  .member p {
-    width: 80%;
-  }
+
+
+
+
+ 
   .loc-contact {
     padding-top: 0 !important;
   }
+
+
+
+
+   
+  .links-container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .links-container .card {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+  }
+  .links-container .menu {
+    background-image: url(./image/menu.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+  }
+  .links-container .locations {
+    background-image: url(./image/locations.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+  }
+  .links-container .team {
+    background-image: url(./image/team.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+  }
+
+  .review {
+    height: 420px;
+    width: 90%;
+    margin: 50px auto 0;
+  }
+  .review-container {
+    margin: 0 auto;
+  }
+  .review-card {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .onereview {
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 18px 0;
+    background-color: #f7f9e4;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .onereview img{
+    border-radius: 50%;
+    border: 8px solid #fff;
+    height: 140px;
+    width: 140px;
+    display: block;
+    margin: 10px auto;
+  }
+  .quote {
+    font-style: italic;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .checked {
+    color: orange;
+  }
+  
+  /* wavy separator */
+  .wave-container {
+    position: relative;
+    background: #f4f8cf;
+    height: 161px;
+    width: 100%;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 161px;
+    width: 98%;
+    background: #f4f8cf;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 100%;
+    background-color: #f4f8cf;
+    right: -1.5%;
+    top: 40%;
+  }
+
+  .wave::after {
+    width: 55%;
+    height: 109%;
+    background-color: #f8f1ea;
+    left: -1.5%;
+    top: 60%;
+  }
+
   .contact {
     text-align: center;
-    padding-top: 160px;
+    padding-top: 120px;
     margin-top: -150px;
     margin: 20px;
     background-color: #f8f1ea;
     margin: 0;
-
   }
   .contact h2 {
     text-align: center;
@@ -1532,29 +1708,32 @@ margin: 50px;
     width: 80%;
     margin: 0 auto;
   }
+
   .map {
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
     padding: 40px 0;
+    width: 90%;
+    margin: 40px auto 0;
+    justify-content: space-around;
   }
+
   #map {
     height: 400px;
     width: 50%;
-    /* margin: 0 auto; */
-    background-color: aqua;
+    /* background-color: aqua; */
   }
+
   .info {
     align-self: center;
   }
+
   .form1 {
-    height: 500px;
+    height: 400px;
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
   }
   .mypage {
-    background-color: #445c5f5e;
-    height: 400px;
+    background-color: #999;
     padding: 20px;
   }
   .mypage h2 {
@@ -1574,9 +1753,11 @@ margin: 50px;
     margin-top: 10px;
   }
   .example {
-    margin: 50px;
+    margin: 25px;
   }
 
+
+  
   footer {
     text-align: center;
     background-color: #89CFD7;
@@ -1664,36 +1845,7 @@ margin: 50px;
   .team-card {
     margin: 20px auto!important;
   }
-  
-  .links-container {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-  }
-  .links-container .card {
-    height: 300px;
-    width: 300px;
-    margin: 20px;
-  }
-  .links-container .menu {
-    background-image: url(./image/menu.jpg);
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-  }
-  .links-container .locations {
-    background-image: url(./image/locations.jpg);
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-  }
-  .links-container .team {
-    background-image: url(./image/team.jpg);
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-  }
+ 
   
   .card {
     position: relative;
@@ -1749,29 +1901,9 @@ margin: 50px;
     margin-top: 15px;
   }
 
-  .aboutus {
-    padding-top: 170px;
-    margin-top: -170px;
-  }
-  .aboutus h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  .aboutus-header {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
+  
 
-  .section h3 {
-    font-size: 2rem;
-  }
-  .right-caption {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
+ 
   main {
     background-color: #f4f8cf;
     padding-top: 50px;
@@ -1817,83 +1949,9 @@ margin: 50px;
   flex: 0 1 auto;
 }
 
-.review {
-  height: 370px;
-  width: 90%;
-  margin: 0 auto;
 
-}
-.review-container {
-  /* height: 300px; */
-  /* width: 100%; */
-  margin: 50px auto;
-}
-.review-card {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-}
-.onereview img{
-  border-radius: 50%;
-  height: 120px;
-  width: 120px;
-  display: block;
-  margin: 10px auto;
-}
-.onereview {
-  border: 1px solid #333;
-  border-radius: 3px;
-  margin: 0 10px;
-  padding: 20px 0;
-  background-color: #f7f9e4;
-  width: 25%;
-}
-.quote {
-  /* font-size: 0.7rem; */
-  font-style: italic;
-  width: 80%;
-  margin: 0 auto;
-}
-.checked {
-  color: orange;
-}
 
-.wave-container {
-  position: relative;
-  background: #f4f8cf;
-  height:170px;
-  width: 100%;
-}
 
-.wave {
-  position: absolute;
-  height: 161px;
-  width: 98%;
-  background: #f4f8cf;
-  bottom: 0;
-}
-
-.wave::before, .wave::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 50% 100%;
-}
-
-.wave::before {
-  width: 55%;
-  height: 100%;
-  background-color: #f4f8cf;
-  right: -1.5%;
-  top: 40%;
-}
-.wave::after {
-  width: 55%;
-  height: 109%;
-  background-color: #f8f1ea;
-  left: -1.5%;
-  top: 60%;
-}
 
   }
 

@@ -110,7 +110,7 @@ const coffeeApi = async () => {
 }
 coffeeApi();
 
-// Review using randomuser & Kanye.rest
+// Review using randomuser & Friends quotation
 const randomuser = async () => {
   try {
     let response = await fetch('https://randomuser.me/api/?results=10')
@@ -122,7 +122,7 @@ const randomuser = async () => {
     // let quote = quotes.quote;
     console.log(quotes);
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
 
       let reviewCard = document.querySelector('.review-card');
       
@@ -212,22 +212,22 @@ const randomuser = async () => {
       let emailex = document.querySelector('#emailex');
       let pwdex = document.querySelector('#pwdex');
 
-      let emailadress = userList[1].email;
+      let emailaddress = userList[1].email;
+      console.log(emailaddress)
       let password = userList[1].login.password;
-      emailex.innerHTML = emailadress;
+      console.log(password)
+      emailex.innerHTML = emailaddress;
       pwdex.innerHTML = password;
-      console.log(pwdex);
-
+      // console.log(pwdex);
 
       let email = document.querySelector('#email');
       let pwd = document.querySelector('#pwd');
-
       let button = document.querySelector('#button');
       
       button.addEventListener('click', ()=>{
         console.log(email.value);
         // for (let i = 0; i < userList.length; i++) {
-          if (email.value === emailadress || pwd.value === password) {
+          if (email.value === emailaddress || pwd.value === password) {
             alert('Welcome Back!');
           } else {
             alert('Check your email or password');
