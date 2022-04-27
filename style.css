@@ -8,7 +8,7 @@ a {
 }
 header {
   margin: 0;
-  height: 700px;
+  /* height: 700px; */
   background: url(image/header_coffee.jpg);
   background-size: cover;
   width: 100%;
@@ -69,6 +69,21 @@ header {
   }
   .menu-main {
     padding-top: 95px;
+  }
+  .menu {
+    height: 900px;
+    padding-top: 200px;
+  }
+  .menu-container {
+    height: 630px;
+    background-color: #49b2bd62;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
   }
   /* menu.html ends */
 
@@ -1295,22 +1310,16 @@ margin: 50px;
 @media screen and (min-width:1080px) {
 
   /* style for locations.html */
-  .locations-header {
-    height: 1000px;
+  .location-main {
+    padding-top: 200px;
   }
-
-  .locations-header h2 {
+  .location-main h2 {
     text-align: center;
-    font-size: 2.5rem;
-    padding-top: 180px;
   }
-  
-  .locations-header p {
+  .location-main p {
     width: 80%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
-  
   .location-container {
     display: flex;
     justify-content: space-evenly;
@@ -1343,20 +1352,51 @@ margin: 50px;
   .location p {
     width: 90%;
   }
+
+  .locations .map {
+    margin: 0 auto;
+  }
+  
+  .locations .contact {
+    padding-top: 20px;
+  }
   
    /* style for menu.html */
-  .menu h2 {
-  text-align: center;
-  font-size: 2rem;
+  .menu header {
+    height: 880px;
+  }
+  .menu-main {
+    padding-top: 227px;
+  }
+  .menu-container {
+    padding: 20px 0;
+    background-color: #49b2bd62;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu-container h1 {
+    text-align: center;
+  }
+  .divParent {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto 10px;
+    height: 40px;
+  }
+  .divTitle, .divPrice {
+    flex: 0 1 auto;
+    line-height: 40px
+  }
+  .divLine {
+    padding: 5px 15px;
+    flex-grow: 2;
+  }
+  .divLine hr{
+    border-style: dotted;
   }
 
-  .menu p {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  }
-
-   /* Style for team.html */
+  /* Style for team.html */
   .members {
   display: flex;
   }
@@ -1372,6 +1412,24 @@ margin: 50px;
   }
   .member p {
   width: 80%;
+  }
+  .team-header {
+    height: 860px;
+  }
+  .teampage {
+    padding-top: 180px;
+    text-align: center;
+  }
+  .teampage h2 {
+    font-size: 2.5rem;
+  }
+  .teampage p {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .team-card {
+    margin: 20px auto!important;
   }
 
   /* style for all pages */
@@ -1573,12 +1631,6 @@ margin: 50px;
 
 
  
-  .loc-contact {
-    padding-top: 0 !important;
-  }
-
-
-
 
    
   .links-container {
@@ -1692,6 +1744,7 @@ margin: 50px;
     top: 60%;
   }
 
+/* Contact */
   .contact {
     text-align: center;
     padding-top: 120px;
@@ -1730,6 +1783,7 @@ margin: 50px;
     margin: 20px 0 10px;
   }
 
+/* Login form */
   .form1 {
     height: 500px;
     background-color: #f8f1ea;
@@ -1764,7 +1818,6 @@ margin: 50px;
   .example {
     margin: 25px;
   }
-
 
 /* Footer */
   footer {
@@ -1836,25 +1889,7 @@ margin: 50px;
     font-size: .8rem;
     color: #cceaeece;
   }
-  /* team.html */
-  .team-header {
-    height: 860px;
-  }
-  .teampage {
-    padding-top: 180px;
-    text-align: center;
-  }
-  .teampage h2 {
-    font-size: 2.5rem;
-  }
-  .teampage p {
-    margin: 0 auto;
-    width: 80%;
-    padding-bottom: 20px;
-  }
-  .team-card {
-    margin: 20px auto!important;
-  }
+
  
   
   .card {
@@ -1923,43 +1958,6 @@ margin: 50px;
   .newsletter p {
     margin: 0;
   }
-.menu {
-  height: 900px;
-  padding-top: 200px;
-}
-.menu-main {
-  /* padding-top: 200px; */
-  /* opacity: 0.6; */
-}
-.menu-container {
-  height: 630px;
-  background-color: #49b2bd62;
-  width: 80%;
-  margin: 0 auto;
-}
-.menu-container h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 30px;
-}
-.divParent {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: 0 auto 10px;
-}
-.divLine {
-  padding: 5px 15px;
-  flex-grow: 2
-}
-.divLine hr{
-  border-style: dotted;
-}
-.divPrict, .divTitle {
-  flex: 0 1 auto;
-}
-
-
 
 
 
