@@ -1726,18 +1726,27 @@ margin: 50px;
   .info {
     align-self: center;
   }
+  .info address {
+    margin: 20px 0 10px;
+  }
 
   .form1 {
-    height: 400px;
-    width: 60%;
-    margin: 0 auto;
+    height: 500px;
+    background-color: #f8f1ea;
   }
+  
   .mypage {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
     background-color: #999;
     padding: 20px;
   }
   .mypage h2 {
     letter-spacing: 2px;
+  }
+  .mypage + p {
+    width: 90%;
   }
   .login {
     font-size: 1.2rem;
