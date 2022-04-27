@@ -1448,7 +1448,7 @@ margin: 50px;
   
   .navlist li a:hover {
     transition: 0.5s;
-    color: #00ff6ec5;
+    color: #35ae72;
     text-decoration: underline;
     text-decoration-style: wavy;
     animation-duration: 0.8s;
@@ -1757,7 +1757,7 @@ margin: 50px;
   }
 
 
-  
+/* Footer */
   footer {
     text-align: center;
     background-color: #89CFD7;
@@ -1801,7 +1801,7 @@ margin: 50px;
   }
   
   footer ul {
-    margin-bottom: 10px;
+    margin: 10px auto;
   }
   footer ul li {
     display: inline-block;
@@ -1813,13 +1813,14 @@ margin: 50px;
     margin: 0 20px;
   }
   footer ul li a:hover {
-    color: #99afb2ce;
-    transition: .6s;
+    color: #35ae72;
+    transition: 0.5s;
+    animation-duration: 0.8s;
   }
   .logo-bottom {
     height: 70px;
     width: 70px;
-    margin-top: 20px;
+    margin: 20px auto;
   }
   .bottom p{
     margin: 0;
