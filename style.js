@@ -72,8 +72,6 @@ const coffeeApi = async () => {
   try {
     let response = await fetch('https://api.sampleapis.com/coffee/hot')
     let coffee = await response.json()
-    // console.log(coffee);
-    // console.log(coffee[1].title);
 
     for (let i = 0; i < 10; i++) {
       let coffeemenu = document.querySelector('.coffeemenu');
@@ -105,7 +103,7 @@ const coffeeApi = async () => {
       coffeemenu.appendChild(divParent);
     }
   } catch(error){
-    // console.log(error);
+      // console.log(error);
   }
 }
 coffeeApi();
@@ -119,8 +117,6 @@ const randomuser = async () => {
 
     let friends = await fetch('https://friends-quotes-api.herokuapp.com/quotes')
     let quotes = await friends.json();
-    // let quote = quotes.quote;
-    console.log(quotes);
 
     for (let i = 0; i < 5; i++) {
 
@@ -139,12 +135,6 @@ const randomuser = async () => {
       
       let rateNum = Math.floor((Math.random() * 6) + 0);
       rate.innerHTML = rateNum;
-      
-      // let star1= document.querySelector('.star1');
-      // let star2 = document.querySelector('.star2');
-      // let star3 = document.querySelector('.star3');
-      // let star4 = document.querySelector('.star4');
-      // let star5 = document.querySelector('.star5');
       
       let divStar = document.createElement('div');
       let star1= document.createElement('span');
@@ -197,12 +187,12 @@ const randomuser = async () => {
     }
 
   } catch(error){
-    // console.log(error);
+      // console.log(error);
   }
   }
   randomuser();
 
-  // Example: email, password
+  // Example email and password, Login
   const example = async () => {
     try {
       let response = await fetch('https://randomuser.me/api/?results=10')
@@ -213,12 +203,9 @@ const randomuser = async () => {
       let pwdex = document.querySelector('#pwdex');
 
       let emailaddress = userList[1].email;
-      console.log(emailaddress)
       let password = userList[1].login.password;
-      console.log(password)
       emailex.innerHTML = emailaddress;
       pwdex.innerHTML = password;
-      // console.log(pwdex);
 
       let email = document.querySelector('#email');
       let pwd = document.querySelector('#pwd');
@@ -226,13 +213,11 @@ const randomuser = async () => {
       
       button.addEventListener('click', ()=>{
         console.log(email.value);
-        // for (let i = 0; i < userList.length; i++) {
-          if (email.value === emailaddress || pwd.value === password) {
+          if (email.value === emailaddress && pwd.value === password) {
             alert('Welcome Back!');
           } else {
             alert('Check your email or password');
           }
-        // }
       });
 
     } catch(error){
@@ -241,4 +226,3 @@ const randomuser = async () => {
     }
     example();
 
-    // Login
