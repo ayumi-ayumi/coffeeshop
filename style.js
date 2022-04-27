@@ -25,34 +25,39 @@ function setMarkers(map) {
   }
 }
 
-//Countdown opening days
-function countdown () {
-  setInterval(() => {
-    const days = document.querySelector('.days');
-    const hours = document.querySelector('.hours');
-    const minutes = document.querySelector('.minutes');
-    const seconds = document.querySelector('.seconds'); 
+//Countdown opening days (Repeatind 7 days)
+let diff = 604800000;
+countdown = () =>  {
+  
+  // const today = new Date().getTime();
+  // const openingDay = new Date('April 7, 2022 13:42:00').getTime();
+  // console.log(openingDay);
+  // console.log(today);
+  // let diff = (openingDay - today);
+  // if (diff < 0) {
+    //   diff = diff + 604800000;
+    // }
 
+  const days = document.querySelector('.days');
+  const hours = document.querySelector('.hours');
+  const minutes = document.querySelector('.minutes');
+  const seconds = document.querySelector('.seconds'); 
     
-    const today = new Date().getTime();
-    const openingDay = new Date('April 11, 2022 17:55:00').getTime();
-    let diff = openingDay - today;
-    if (diff < 0) {
-      diff = diff + 604800000;
-    }
-
-    const countdownDays = Math.floor(diff/1000/60/60/24);
-    const countdownHours = Math.floor((diff/1000/60/60)%24);
-    const countdownMinutes = Math.floor((diff/1000/60)%60);
-    const countdownSeconds = Math.floor((diff/1000)%60);
-    
-    days.innerHTML = countdownDays;
-    hours.innerHTML = countdownHours;
-    minutes.innerHTML = countdownMinutes;
-    seconds.innerHTML = countdownSeconds;
-  }, 1000);
+  diff = diff - 1000;
+  if (diff < 0) {
+    diff = diff + 604800000;
+  }
+  
+  const countdownDays = Math.floor(diff/1000/60/60/24);
+  const countdownHours = Math.floor((diff/1000/60/60)%24);
+  const countdownMinutes = Math.floor((diff/1000/60)%60);
+  const countdownSeconds = Math.floor((diff/1000)%60);
+  days.innerHTML = countdownDays;
+  hours.innerHTML = countdownHours;
+  minutes.innerHTML = countdownMinutes;
+  seconds.innerHTML = countdownSeconds;
 }
-countdown();
+setInterval(countdown, 1000) ;
 
 //Humberger menu
 const nav = document.querySelector('#navArea');
@@ -126,8 +131,8 @@ const randomuser = async () => {
       div.classList.add('onereview');
       let img = document.createElement('img');
       let rate = document.createElement('div');
-      let p = document.createElement('p');
-      p.classList.add('quote');
+      let q = document.createElement('q');
+      q.classList.add('quote');
       let pName = document.createElement('p');
       
       let image = userList[i].picture.large;
@@ -179,10 +184,10 @@ const randomuser = async () => {
         }
       }
   
-      p.innerHTML = quotes[i].quote;
+      q.innerHTML = quotes[i].quote;
       pName.innerHTML = userList[i].name.first;
   
-      div.append(img, p, pName, divStar);  
+      div.append(img, q, pName, divStar);  
       reviewCard.appendChild(div);
     }
 
