@@ -274,7 +274,7 @@ header {
 .location p {
   width: 90%;
 }
-#homem {
+#home {
   height: auto;
 }
 .menu h2 {
@@ -709,6 +709,14 @@ margin: 50px;
 }
 }
 
+
+@media screen and (max-width:740px) {
+  /* Review */
+    .onereview {
+      width: 46% !important;
+    }
+}
+
 /* Tablet responsibe */
 @media screen and (min-width:480px) and (max-width:1080px) {
   header {
@@ -719,7 +727,7 @@ margin: 50px;
     width: 100%;
   }
 
-.header-top {
+  .header-top {
     position: fixed;
     top: 0;
     left: 0;
@@ -735,6 +743,7 @@ margin: 50px;
     justify-content: center;
     color: #fff;
     line-height: 60px;
+    font-size: 2vw;
   }
   
   .days, .hours, .minutes, .seconds {
@@ -744,39 +753,45 @@ margin: 50px;
     border-radius: 20%;
     margin: 0 15px;
   }
-
-  .top {
-  display: flex;
-  justify-content: center;
-  background-color: #89CFD7;
-  opacity: 0.9;
-  }
-
+  
   .logo {
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 60px;
-    left:0;
+    /* position: absolute; */
+    /* top: 60px; */
+    /* left:0; */
     z-index: 2;
+    display: block;
+  }
+  .top {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-wrap: nowrap; */
+  background-color: #89CFD7;
+  opacity: 0.9;
+  }
+  .menutopdiv {
+    float: left;
+    display: block;
   }
 
   .navlist {
     height: 100px;
     display: flex;
+    justify-content: center;
     z-index: 4;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
   .navlist ul {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
   }
 
   .navlist li {
     display: inline;
-    margin: 0 10px;
-    font-size: 1.2rem;
+    margin: 0 1vw;
+    font-size: 2.4vmin;   
     line-height: 100px;
   }
   
@@ -786,7 +801,7 @@ margin: 50px;
     color: #dbe6e8fe;
     height: 100px;
     display: inline-block;
-    width: 100px;
+    /* width: 100px; */
     letter-spacing: 0.9px;
   }
 
@@ -843,15 +858,18 @@ margin: 50px;
     width: 100%;
     margin: 0 auto;
   }
+
   .location h4 {
     font-size: 1.5rem;
   }
+
   .location {
       text-align: center;
       width: 30%;
       margin: 10px;
       width: 100%;
   }
+
   .location img {
     height: 186px;
     width: 300px;
@@ -860,55 +878,65 @@ margin: 50px;
     border-radius: 1%;
     box-shadow: 12px 12px rgb(250 245 245);
   }
+
   .location p {
     width: 100% !important;
   }
 
 /* menu.html */
+  .menu header {
+    height: 900px;
+  }
+
   .menu h2 {
     text-align: center;
     font-size: 2rem;
   }
+
   .menu p {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 
-  .menu {
-    height: 900px;
-    }
-    .menu-main {
-    padding-top: 200px;
-    /* opacity: 0.6; */
-    }
-    .menu-container {
-    height: 630px;
-    background-color: #49b2bd62;
-    width: 80%;
-    margin: 0 auto;
-    }
-    .menu-container h1 {
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 30px;
-    }
-    .divParent {
+  .menu-main {
+  padding-top: 200px;
+  }
+
+  .menu-container {
+  height: 630px;
+  background-color: #49b2bd62;
+  width: 80%;
+  margin: 0 auto;
+  }
+
+  .menu-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 30px;
+  }
+
+  .divParent {
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin: 0 auto 10px;
-    }
-    .divLine {
-    padding: 5px 15px;
-    flex-grow: 2
-    }
-    .divLine hr{
-    border-style: dotted;
-    }
-    .divPrice, .divTitle {
+    height: 40px;
+  }
+
+  .divTitle, .divPrice {
     flex: 0 1 auto;
-    }
+    line-height: 40px
+  }
+
+  .divLine {
+    padding: 5px 15px;
+    flex-grow: 2;
+  }
+
+  .divLine hr{
+    border-style: dotted;
+  }
 
   /* team.html starts */
  .teampage {
@@ -962,7 +990,7 @@ margin: 50px;
     margin: 0 auto;
   }
   .section .left img{
-    height: 360px;
+    height: 20vh;
     width: 100%;
     z-index: 3;
     display: block;
@@ -974,8 +1002,8 @@ margin: 50px;
     margin-top: 30px;
   }
   .images img {
-  height: 175px;
-  width: 280px;
+  height: 14vh;
+  width: 45%;
   object-fit: cover;
   display: block;
   }
@@ -1142,26 +1170,23 @@ margin: 50px;
 
 /* Review */
   .review {
-  height: 460px;
-  width: 90%;
-  margin: 0 auto;
-  }
+  height: auto;
+  margin-top: 50px;
+}
 
-  .review-container {
-  margin: 50px auto;
-  }
-
-  .review-card {
+.review-card {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap ;
   }
   
   .onereview img{
     border-radius: 50%;
-    border: 8px solid #fff;
-    height: 130px;
-    width: 130px;
+    border: 4px solid #fff;
+    height: auto;
+    width: 100%;
     display: block;
     margin: 10px auto;
   }
@@ -1169,18 +1194,29 @@ margin: 50px;
   .onereview {
     border: 1px solid #acacac;
     border-radius: 3px;
-    margin: 0 10px;
-    padding: 18px 0;
+    margin: 8px;
+    padding: 8px;
     background-color: #f7f9e4;
-    width: 25%;
+    width: 30%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
   }
-
+  .rightDiv {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .leftDiv {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .quote {
   font-style: italic;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   }
 
@@ -1328,8 +1364,9 @@ margin: 50px;
     margin: 0 20px;
   }
   footer ul li a:hover {
-    color: #99afb2ce;
-    transition: .6s;
+    color: #35ae72;
+    transition: 0.5s;
+    animation-duration: 0.8s;
   }
   .logo-bottom {
     height: 70px;
@@ -1486,6 +1523,9 @@ margin: 50px;
   }
 
 /* style for all pages */
+  .index header {
+    height: 600px;
+  }
   main {
     background-color: #f4f8cf;
     padding-top: 50px;
@@ -1546,7 +1586,7 @@ margin: 50px;
     display: inline;
     margin: 0 20px;
     line-height: 100px;
-    font-size: 1.2rem;
+    font-size: 2.4vmin;
   }
   
   .navlist li a {
@@ -1717,17 +1757,12 @@ margin: 50px;
 
   .review {
     height: 420px;
-    width: 90%;
+    width: 95%;
     margin: 50px auto 0;
-  }
-
-  .review-container {
-    margin: 0 auto;
   }
 
   .review-card {
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
   }
 
@@ -1745,17 +1780,26 @@ margin: 50px;
 
   .onereview img{
     border-radius: 50%;
-    border: 8px solid #fff;
+    border: 4px solid #fff;
     height: 140px;
     width: 140px;
     display: block;
     margin: 10px auto;
   }
-
+  .rightDiv {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .leftDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .quote {
-    font-style: italic;
-    width: 80%;
-    margin: 0 auto;
+  font-style: italic;
+  width: 95%;
+  margin: 0 auto;
   }
 
   .checked {
@@ -1989,7 +2033,7 @@ margin: 50px;
   }
 
   .inside h4 {
-    font-size: 3rem;
+    font-size: 3.9vw;
     color: #fff;
     letter-spacing: 2px;
     margin-top: 80px;

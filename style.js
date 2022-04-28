@@ -123,14 +123,20 @@ const randomuser = async () => {
     let friends = await fetch('https://friends-quotes-api.herokuapp.com/quotes')
     let quotes = await friends.json();
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
 
       let reviewCard = document.querySelector('.review-card');
       
       let div = document.createElement('div');
       div.classList.add('onereview');
+
+      let rightDiv = document.createElement('div');
+      rightDiv.classList.add('rightDiv');
       let img = document.createElement('img');
       let rate = document.createElement('div');
+      
+      let leftDiv = document.createElement('div');
+      leftDiv.classList.add('leftDiv');
       let q = document.createElement('q');
       q.classList.add('quote');
       let pName = document.createElement('p');
@@ -139,7 +145,7 @@ const randomuser = async () => {
       img.setAttribute('src', image);
       
       let rateNum = Math.floor((Math.random() * 6) + 0);
-      rate.innerHTML = rateNum;
+      // rate.innerHTML = rateNum;
       
       let divStar = document.createElement('div');
       let star1= document.createElement('span');
@@ -187,7 +193,10 @@ const randomuser = async () => {
       q.innerHTML = quotes[i].quote;
       pName.innerHTML = userList[i].name.first;
   
-      div.append(img, q, pName, divStar);  
+      rightDiv.append(img, divStar);  
+      leftDiv.append(q, pName);
+
+      div.append(rightDiv, leftDiv);  
       reviewCard.appendChild(div);
     }
 
