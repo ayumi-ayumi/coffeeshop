@@ -217,17 +217,17 @@ const randomuser = async () => {
       let button = document.querySelector('#button');
       
       button.addEventListener('click', ()=>{
-        console.log(email.value);
+        // console.log(email.value);
           if (email.value === emailaddress && pwd.value === password) {
             alert('Welcome Back!');
           } else {
             alert('Check your email or password');
           }
       });
-
-    } catch(error){
+    } catch(error) {
       // console.log(error);
     }
-    }
+    };
     example();
+
 
