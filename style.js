@@ -60,17 +60,16 @@ countdown = () =>  {
 setInterval(countdown, 1000) ;
 
 //Humberger menu
-const nav = document.querySelector('#navArea');
-const btn = document.querySelector('.toggle-btn');
-btn.onclick = () => {
-  nav.classList.toggle('open');
-};
+// const nav = document.querySelector('#navArea');
+// const btn = document.querySelector('.toggle-btn');
+// btn.onclick = () => {
+//   nav.classList.toggle('open');
+// };
 
-const ul = document.querySelector('.ul');
-// console.log(a);
-ul.onclick = () => {
-  nav.classList.remove('open');
-}
+// const ul = document.querySelector('.ul');
+// ul.onclick = () => {
+//   nav.classList.remove('open');
+// }
 
 // coffee menu API
 const coffeeApi = async () => {
