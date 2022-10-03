@@ -2,84 +2,92 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: rgb(223, 237, 248);
+  box-sizing: border-box;
 }
+
 a {
   cursor: pointer;
 }
+
 header {
-  margin: 0;
   background: url(image/header_coffee.jpg);
   background-size: cover;
   width: 100%;
+  max-height: 600px;
+  min-height: 300px;
 }
+
 .countdown em {
   font-style: normal;
 }
 
+.countdown {
+  height: 5vh;
+  background-color: #445c5f;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  line-height: 5vh;
+  font-size: 2vw;
+}
+
+.days , .hours, .minutes, .seconds {
+  margin: 0 10px;
+}
+
+.container-fluid {
+  padding-left: 0;
+}
+
 .logo {
-  width: 85px;
-  height: 85px;
+  width: 8vw;
+  height: 8vw;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar {
+  padding: 0;
+  min-height: 60px;
+  --bs-bg-opacity: 0.7;
 }
 
 #navbarNav {
   justify-content: center;
 }
+
 .nav-item {
   margin: 0 10px;
+}
+
+.headerMain {
+  text-align: center;
+  padding: 8vmax 0;
+}
+
+.headerMain h1 {
+  font-size: 6vw;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: #00ff6ec5 1px 0 10px;
+}
+
+.headerMain p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5vw;
+  color: #fff;
+  text-shadow: #00ff6ec5 1px 0 10px;
 }
 
 /* mobile responsive */
 @media screen and (max-width:480px)  {
 
-.countdown {
-  width: 100%;
-  height: 30px;
-  background-color: #445c5f;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  line-height: 30px;
-  font-size: 0.7rem;
-}
-
-.days, .hours, .minutes, .seconds {
-  line-height: 30px;
-  width: 10px;
-  height: 30px;
-  border-radius: 20%;
-  margin: 0 5px;
-}
-.logo {
-  width: 30px;
-  height: 30px;
-} 
-header {
-  margin: 0;
-  height: 430px;
-  background: url(/image/header_coffee.jpg);
-  background-size: cover;
-  width: 100%;
-}  
-.header-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-.top {
-  background-color: #89CFD7;
-  opacity: 0.9;
-  width: 100%;
-  position: relative;
-  height: 50px;
-}
-
 /* menu.html starts */
-.menutopdiv {
-  height: 50px;
-}
 .menu-main {
   padding-top: 95px;
 }
@@ -99,14 +107,6 @@ header {
   padding-top: 30px;
 }
 /* menu.html ends */
-
-
-#navArea {
-  position: relative;
-}
-.open .navlist{
-  right: 0;
-}
 
 .navlist {
   position: absolute;
@@ -222,27 +222,7 @@ header {
 }
 /* team.html ends */
 
-.headerMain {
-  text-align: center;
-  padding-top: 50px;
-}
 
-.headerMain h1 {
-  font-size: 3rem;
-  margin-top: 100px;
-  letter-spacing: 4px;
-  color: #fff;
-  text-shadow: #00ff6ec5 1px 0 10px;
-}
-
-.headerMain p {
-  margin-top: 100px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 0.8rem;
-  color: #fff;
-  text-shadow: #00ff6ec5 1px 0 10px;
-}
 
 .loc-contact {
   padding-top: 0 !important;
@@ -726,129 +706,14 @@ margin: 50px;
 
 
 @media screen and (max-width:740px) {
-  .navlist li {
-    font-size: 16px !important;
-}
-  /* Review */
-    .onereview {
-      width: 46% !important;
-    }
+/* Review */
+  .onereview {
+    width: 46% !important;
+  }
 }
 
 /* Tablet responsibe */
 @media screen and (min-width:480px) and (max-width:1080px) {
-  header {
-    margin: 0;
-    height: 600px;
-    background: url(/image/header_coffee.jpg);
-    background-size: cover;
-    width: 100%;
-  }
-
-  .header-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-  }
-  
-  .countdown {
-    width: auto;
-    height: 50px;
-    background-color: #445c5f;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    line-height: 50px;
-    font-size: 2vw;
-  }
-  
-  .days, .hours, .minutes, .seconds {
-    line-height: 50px;
-    width: 20px;
-    height: 60px;
-    border-radius: 20%;
-    margin: 0 15px;
-  }
-  
- 
-  
-  .menutopdiv {
-    /* float: left; */
-    /* display: block; */
-  }
-  .top {
-    display: flex;
-    justify-content: center;
-    background-color: #89CFD7;
-    opacity: 0.9;
-    }
-  
-  
-  
-    .navlist {
-      height: 85px;
-      display: flex;
-      z-index: 4;
-      width: 100%;
-    }
-  
-    .navlist ul {
-      margin: 0 auto;
-      padding: 0;
-    }
-  
-    .navlist li {
-      display: inline-block;
-      margin: 0 10px;
-      line-height: 85px;
-      font-size: 18px;
-    }
-    
-    .navlist li a {
-      text-decoration: none;
-      text-align: center;
-      color: #fff;
-      height: 85px;
-      display: inline-block;
-      width: 100%;
-      /* letter-spacing: 0.9px; */
-    }
-    
-    .navlist li a:hover {
-      transition: 0.5s;
-      color: #35ae72;
-      text-decoration: underline;
-      text-decoration-style: wavy;
-      animation-duration: 0.8s;
-    }
-
-  .toggle-btn {
-    display: none;
-  }
-
-  .headerMain {
-    text-align: center;
-    padding-top: 230px;
-  }
-
-  .headerMain h1 {
-    font-size: 4rem;
-    margin-top: 15px;
-    letter-spacing: 4px;
-    color: #fff;
-    text-shadow: #00ff6ec5 1px 0 10px;
-  }
-
-  .headerMain p {
-    margin-top: 60px;
-    width: 500px;
-    margin: 0 auto;
-    color: #fff;
-    text-shadow: #00ff6ec5 1px 0 10px;
-  }
-
 /* locations.html */
   .locations h2 {
     text-align: center;
@@ -949,7 +814,7 @@ margin: 50px;
     border-style: dotted;
   }
 
-  /* team.html starts */
+/* team.html starts */
  .teampage {
   padding-top: 180px;
   text-align: center;
@@ -1181,17 +1046,17 @@ margin: 50px;
 
 /* Review */
   .review {
-  height: auto;
-  margin-top: 50px;
+    height: auto;
+    margin-top: 50px;
 }
 
-.review-card {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap ;
-  }
+  .review-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap ;
+    }
   
   .onereview img{
     border-radius: 50%;
@@ -1318,7 +1183,8 @@ margin: 50px;
   .example p {
     margin-bottom: 0;
   }
-  /* Footer */
+
+/* Footer */
   footer {
     text-align: center;
     background-color: #89CFD7;
@@ -1448,7 +1314,7 @@ margin: 50px;
     padding-top: 20px;
   }
 
-  /* style for menu.html */
+/* style for menu.html */
   .menu header {
     height: 880px;
   }
@@ -1543,66 +1409,6 @@ margin: 50px;
     padding-top: 50px;
   }
 
-  .header-top {
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-  }
-
-  .countdown {
-    height: 50px;
-    background-color: #445c5f;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    line-height: 50px;
-  }
-    
-  .days, .hours, .minutes, .seconds {
-    line-height: 50px;
-    width: 20px;
-    height: 60px;
-    border-radius: 20%;
-    margin: 0 15px;
-  }
-
-  .top {
-  display: flex;
-  justify-content: center;
-  background-color: #89CFD7;
-  opacity: 0.9;
-  }
-
-
-
-  .navlist {
-    height: 85px;
-    display: flex;
-    z-index: 4;
-    width: 100%;
-  }
-
-  .navlist ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  .navlist li {
-    display: inline;
-    margin: 0 10px;
-    line-height: 85px;
-    font-size: 18px;
-  }
-  
-  .navlist li a {
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    height: 85px;
-    display: inline-block;
-    width: 75px;
-    /* letter-spacing: 0.9px; */
-  }
   
   .navlist li a:hover {
     transition: 0.5s;
@@ -1610,31 +1416,6 @@ margin: 50px;
     text-decoration: underline;
     text-decoration-style: wavy;
     animation-duration: 0.8s;
-  }
-
-  .toggle-btn {
-    display: none;
-  }
-  
-  .headerMain {
-    text-align: center;
-    padding-top: 230px;
-  }
-  
-  .headerMain h1 {
-    font-size: 4rem;
-    margin-top: 15px;
-    letter-spacing: 4px;
-    color: #fff;
-    text-shadow: #00ff6ec5 1px 0 10px;
-  }
-  
-  .headerMain p {
-    margin-top: 60px;
-    width: 500px;
-    margin: 0 auto;
-    color: #fff;
-    text-shadow: #00ff6ec5 1px 0 10px;
   }
   
   main {
@@ -1775,7 +1556,6 @@ margin: 50px;
     border: 1px solid #acacac;
     border-radius: 3px;
     margin: 0 10px;
-    padding: 18px 0;
     background-color: #f7f9e4;
     width: 25%;
     display: flex;
@@ -1811,7 +1591,7 @@ margin: 50px;
     color: orange;
   }
   
-  /* wavy separator */
+/* wavy separator */
   .wave-container {
     position: relative;
     background: #f4f8cf;
