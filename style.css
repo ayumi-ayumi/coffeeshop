@@ -22,7 +22,7 @@ header {
 }
 
 .countdown {
-  height: 5vh;
+  min-height: 50px;
   background-color: #445c5f;
   display: flex;
   justify-content: center;
@@ -91,10 +91,7 @@ header {
 .menu-main {
   padding-top: 95px;
 }
-.menu {
-  height: 900px;
-  padding-top: 200px;
-}
+
 .menu-container {
   height: 630px;
   background-color: #49b2bd62;
@@ -251,36 +248,6 @@ header {
   width: 100%;
   position: relative;
   margin: auto;
-}
-
-.location h4 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0;
-}
-.location img {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 1%;
-  box-shadow: 15px 15px rgb(250, 245, 245);
-}
-.location p {
-  width: 90%;
-}
-
-.menu h2 {
-  text-align: center;
-  /* font-size: 2rem; */
-}
-.menu p {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 0.8rem;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 
@@ -735,45 +702,9 @@ margin: 50px;
     margin: 0 auto;
   }
 
-  .location h4 {
-    font-size: 1.5rem;
-  }
-
-  .location {
-      text-align: center;
-      width: 30%;
-      margin: 10px;
-      width: 100%;
-  }
-
-  .location img {
-    height: 186px;
-    width: 300px;
-    object-fit: cover;
-    display: block;
-    border-radius: 1%;
-    box-shadow: 12px 12px rgb(250 245 245);
-  }
-
-  .location p {
-    width: 100% !important;
-  }
 
 /* menu.html */
-  .menu header {
-    height: 900px;
-  }
 
-  .menu h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .menu p {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
 
   .menu-main {
   padding-top: 200px;
@@ -1279,32 +1210,6 @@ margin: 50px;
     height: auto;
   }
 
-  .location h4 {
-    font-size: 1.5rem;
-  }
-
-  .location {
-    /* flex: 1; */
-    /* display: none; */
-    text-align: center;
-    width: 33%;
-    margin: 0 auto;
-    /* width: 80%; */
-  }
-
-  .location img {
-    height: 300px;
-    width: 90%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1%;
-    box-shadow: 15px 15px rgb(250, 245, 245);
-  }
-
-  .location p {
-    width: 90%;
-  }
 
   .locations .map {
     margin: 0 auto;
@@ -1315,9 +1220,7 @@ margin: 50px;
   }
 
 /* style for menu.html */
-  .menu header {
-    height: 880px;
-  }
+
 
   .menu-main {
     padding-top: 227px;
