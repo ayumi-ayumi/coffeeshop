@@ -12,6 +12,17 @@ a {
 
 /* mobile responsive */
 @media screen and (max-width:480px)  {
+  .locations h2 {
+    padding-top: 100px;
+    font-size: 3rem;
+    margin: 0;
+
+  }
+  .locations p {
+      font-size: 0.8rem;
+      width: 80%;
+      margin: 0 auto;
+    }
 
 .navlist {
   position: absolute;
@@ -90,9 +101,6 @@ a {
   transform: translateY(-10px) rotate(315deg);
 }
 
-  /* team.html starts*/
-
-/* team.html ends */
 
 
 
@@ -163,34 +171,6 @@ a {
   display: none;
 }
 
-
-.contact {
-  text-align: center;
-  height: 1400px;
-  background-color: #f8f1ea;
-  padding-top: 120px;
-}
-.contact p {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 0.8rem;
-}
-
-#map {
-  height: 400px;
-  width: 80%;
-  background-color: aqua;
-  margin: 0 auto;
-}
-.map {
-  /* display: flex; */
-  /* justify-content: space-evenly; */
-  /* margin-top: 40px; */
-  padding: 40px 0;
-}
-.info {
-  align-self: center;
-}
 
 footer {
   text-align: center;
@@ -511,6 +491,15 @@ margin: 50px;
 
 /* Tablet responsibe */
 @media screen and (min-width:480px) and (max-width:1080px) {
+  .locations h2 {
+      font-size: 2rem;
+      padding-top: 200px;
+    }
+    .locations p {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
   .section {
     width: 95%;
     margin: 0 auto;
@@ -547,44 +536,6 @@ margin: 50px;
 
   
 
-  .contact {
-      text-align: center;
-      padding-top: 115px;
-      margin-top: -115px;
-      margin: 0;
-      background-color: #f8f1ea;
-      width: 100%;
-  }
-  .contact h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
-  .contact p {
-    width: 80%;
-    margin: 0 auto;
-  }
-  #map {
-    height: 400px;
-    width: 90%;
-    margin: 0 auto;
-    background-color: aqua;
-  }
-  .map {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* margin-top: 40px; */
-    padding: 40px 0;
-  }
-  .info {
-    margin-top: 30px;
-    align-self: center;
-  }
-  .info address {
-    margin: 10px 0 0px;
-  }
-  .info hr {
-    display: none;
-  }
 
 
 
@@ -1150,47 +1101,7 @@ margin: 50px;
     top: 60%;
   }
 
-/* Contact */
-  .contact {
-    text-align: center;
-    padding-top: 170px;
-    margin-top: -170px;
-    margin: 20px;
-    background-color: #f8f1ea;
-    margin: 0;
-  }
-
-  .contact h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .contact p {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .map {
-    display: flex;
-    padding: 40px 0;
-    width: 90%;
-    margin: 40px auto 0;
-    justify-content: space-around;
-  }
-
-  #map {
-    height: 400px;
-    width: 50%;
-    /* background-color: aqua; */
-  }
-
-  .info {
-    align-self: center;
-  }
-
-  .info address {
-    margin: 20px 0 10px;
-  }
+/
 
 /* Login form */
   .form1 {
@@ -1371,4 +1282,10 @@ margin: 50px;
     margin: 0 auto;
     margin-top: 15px;
   }
+  .locations .map {
+      margin: 0 auto;
+    }
+.locations .contact {
+      padding-top: 20px;
+    }
 }
