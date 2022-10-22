@@ -22,12 +22,12 @@ header {
 }
 
 .countdown {
-  min-height: 50px;
+  min-height: 30px;
   background-color: #445c5f;
   display: flex;
   justify-content: center;
   color: #fff;
-  line-height: 5vh;
+  /* line-height: 5vh; */
   font-size: 2vw;
 }
 
