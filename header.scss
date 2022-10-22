@@ -1,10 +1,13 @@
-
 header {
   background: url(image/header_coffee.jpg);
   background-size: cover;
   width: 100%;
+}
+
+#home header {
   max-height: 600px;
   min-height: 300px;
+
 }
 
 .countdown em {
@@ -17,7 +20,6 @@ header {
   display: flex;
   justify-content: center;
   color: #fff;
-  /* line-height: 5vh; */
   font-size: 2vw;
 }
 

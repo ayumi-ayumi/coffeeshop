@@ -13,24 +13,6 @@ a {
 /* mobile responsive */
 @media screen and (max-width:480px)  {
 
-/* menu.html starts */
-.menu-main {
-  padding-top: 95px;
-}
-
-.menu-container {
-  height: 630px;
-  background-color: #49b2bd62;
-  width: 80%;
-  margin: 0 auto;
-}
-.menu-container h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 30px;
-}
-/* menu.html ends */
-
 .navlist {
   position: absolute;
   top: -50px;
@@ -109,40 +91,7 @@ a {
 }
 
   /* team.html starts*/
-.team-header {
-  height: 1730px;
-}
-.teampage {
-  text-align: center;
-}
-.teampage h2 {
-  padding-top: 115px;
-  font-size: 3rem;
-}
-.teampage p {
-  width: 80%;
-  margin: 0 auto;
-}
-.members {
-  width: 90%;
-  margin: 20px auto;
-}
-.member {
-  text-align: center;
-}
-.member img {
-  width: 80%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 25px 25px rgb(253, 247, 247);
-}
-.member p {
-  width: 100%;
-}
-.team-card {
-  margin: 20px auto!important;
-}
+
 /* team.html ends */
 
 
@@ -155,26 +104,6 @@ a {
 
 
 
-.locations h2 {
-  text-align: center;
-  padding-top: 100px;
-  font-size: 3rem;
-  margin: 0;
-}
-
-.locations p {
-  font-size: 0.8rem;
-  width: 80%;
-  margin: 0 auto;
-  /* margin-bottom: 20px; */
-}
-
-.location-container {
-  /* max-width: 450px; */
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
 
 
 /* index.html */
@@ -459,33 +388,8 @@ height: 1420px;
   height: 800px;
 }
 
-.menu-container {
-height: 630px;
-background-color: #49b2bd62;
-width: 80%;
-margin: 0 auto;
-}
-.menu-container h1 {
-font-size: 3rem;
-text-align: center;
-padding-top: 30px;
-}
-.divParent {
-display: flex;
-justify-content: space-between;
-width: 80%;
-margin: 0 auto 10px;
-}
-.divLine {
-padding: 5px 15px;
-flex-grow: 2
-}
-.divLine hr{
-border-style: dotted;
-}
-.divPrict, .divTitle {
-flex: 0 1 auto;
-}
+
+
 
 .review {
 height: 900px;
@@ -607,106 +511,6 @@ margin: 50px;
 
 /* Tablet responsibe */
 @media screen and (min-width:480px) and (max-width:1080px) {
-/* locations.html */
-  .locations h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 200px;
-  }
-
-  .locations p {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .location-container {
-    display: flex;
-    justify-content: space-between;
-    /* height: auto; */
-    width: 100%;
-    margin: 0 auto;
-  }
-
-
-/* menu.html */
-
-
-  .menu-main {
-  padding-top: 200px;
-  }
-
-  .menu-container {
-  height: 630px;
-  background-color: #49b2bd62;
-  width: 80%;
-  margin: 0 auto;
-  }
-
-  .menu-container h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 30px;
-  }
-
-  .divParent {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: 0 auto 10px;
-    height: 40px;
-  }
-
-  .divTitle, .divPrice {
-    flex: 0 1 auto;
-    line-height: 40px
-  }
-
-  .divLine {
-    padding: 5px 15px;
-    flex-grow: 2;
-  }
-
-  .divLine hr{
-    border-style: dotted;
-  }
-
-/* team.html starts */
- .teampage {
-  padding-top: 180px;
-  text-align: center;
-  }
-  .teampage h2 {
-    font-size: 2.5rem;
-  }
-  .teampage p {
-    margin: 0 auto;
-    width: 80%;
-    padding-bottom: 20px;
-  }
-  .team-header {
-    height: 950px;
-  }
-  .members {
-    display: flex;
-    justify-content: center;
-  }
-  .member {
-    text-align: center;
-  }
-  .member img {
-    width: 250px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 20px 20px rgb(253, 247, 247);
-  }
-  .member p {
-    width: 80%;
-  }
-
-
-
   .section {
     width: 95%;
     margin: 0 auto;
@@ -1116,119 +920,6 @@ margin: 50px;
 }
 
 @media screen and (min-width:1080px) {
-/* style for locations.html */
-  .location-main {
-    padding-top: 200px;
-  }
-
-  .location-main h2 {
-    text-align: center;
-  }
-
-  .location-main p {
-    width: 80%;
-    margin: 0 auto 40px;
-  }
-
-  .location-container {
-    display: flex;
-    justify-content: space-evenly;
-    height: auto;
-  }
-
-
-  .locations .map {
-    margin: 0 auto;
-  }
-  
-  .locations .contact {
-    padding-top: 20px;
-  }
-
-/* style for menu.html */
-
-
-  .menu-main {
-    padding-top: 227px;
-  }
-
-  .menu-container {
-    padding: 20px 0;
-    background-color: #49b2bd62;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .menu-container h1 {
-    text-align: center;
-  }
-
-  .divParent {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: 0 auto 10px;
-    height: 40px;
-  }
-
-  .divTitle, .divPrice {
-    flex: 0 1 auto;
-    line-height: 40px
-  }
-
-  .divLine {
-    padding: 5px 15px;
-    flex-grow: 2;
-  }
-
-  .divLine hr{
-    border-style: dotted;
-  }
-
-/* Style for team.html */
-  .members {
-  display: flex;
-  }
-
-  .member {
-  text-align: center;
-  }
-
-  .member img {
-  width: 250px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 20px 20px rgb(253, 247, 247);
-  }
-
-  .member p {
-  width: 80%;
-  }
-
-  .team-header {
-    height: 860px;
-  }
-
-  .teampage {
-    padding-top: 180px;
-    text-align: center;
-  }
-
-  .teampage h2 {
-    font-size: 2.5rem;
-  }
-
-  .teampage p {
-    margin: 0 auto;
-    width: 80%;
-    padding-bottom: 20px;
-  }
-
-  .team-card {
-    margin: 20px auto!important;
-  }
-
 /* style for all pages */
   .index header {
     height: 600px;

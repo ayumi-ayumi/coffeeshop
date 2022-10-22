@@ -1,0 +1,113 @@
+@media screen and (max-width:480px)  {
+  .menu-main {
+    padding-top: 15px;
+  }
+  
+  .menu-container {
+    height: 630px;
+    background-color: #49b2bd62;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .divParent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 10px;
+    }
+    .divLine {
+    padding: 5px 15px;
+    flex-grow: 2
+    }
+    .divLine hr{
+    border-style: dotted;
+    }
+    .divPrict, .divTitle {
+    flex: 0 1 auto;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1080px) {
+  menu-main {
+    padding-top: 200px;
+    }
+  
+    .menu-container {
+    height: 630px;
+    background-color: #49b2bd62;
+    width: 80%;
+    margin: 0 auto;
+    }
+  
+    .menu-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    }
+  
+    .divParent {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      margin: 0 auto 10px;
+      height: 40px;
+    }
+  
+    .divTitle, .divPrice {
+      flex: 0 1 auto;
+      line-height: 40px
+    }
+  
+    .divLine {
+      padding: 5px 15px;
+      flex-grow: 2;
+    }
+  
+    .divLine hr{
+      border-style: dotted;
+    }
+  
+}
+@media screen and (min-width:1080px) {
+  .menu-main {
+    padding-top: 60px;
+  }
+
+  .menu-container {
+    padding: 20px 0;
+    background-color: #49b2bd62;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .menu-container h1 {
+    text-align: center;
+  }
+
+  .divParent {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto 10px;
+    height: 40px;
+  }
+
+  .divTitle, .divPrice {
+    flex: 0 1 auto;
+    line-height: 40px
+  }
+
+  .divLine {
+    padding: 5px 15px;
+    flex-grow: 2;
+  }
+
+  .divLine hr{
+    border-style: dotted;
+  }
+}
