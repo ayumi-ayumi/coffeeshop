@@ -1,10 +1,11 @@
 $breakpoint: (
-  sp: 'screen and (max-width: 480px)',
-  tab: 'screen and (min-width:480px) and (max-width:1080px)',
-  pc: 'screen and (min-width: 1080px)'
+  mobile: 'screen and (max-width: 480px)',
+  tablet: 'screen and (max-width:750px)',
+  laptop: 'screen and (min-width:751px) and (max-width:1080px)',
+  desktop: 'screen and (min-width: 1081px)'
 );
 
-@mixin mq($bp) {
+@mixin mediaq($bp) {
   @media #{map-get($breakpoint, $bp)} {
    @content;
   }
