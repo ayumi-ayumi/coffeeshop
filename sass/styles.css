@@ -1,5 +1,5 @@
 header {
-  background: url(image/header_coffee.jpg);
+  background: url(../image/header_coffee.jpg);
   background-size: cover;
   width: 100%;
 }
@@ -198,7 +198,7 @@ header {
 .location {
   width: 32%;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width:750px) {
   .location {
     width: 90%;
     margin: 0 auto;
@@ -222,26 +222,30 @@ header {
 @media screen and (max-width: 480px) {
   .contact {
     padding: 30px 0;
-    background-color: red;
   }
 }
 
+@media screen and (min-width: 1081px) {
+  .info {
+    margin: 20px 0 10px;
+  }
+}
+@media screen and (min-width:751px) and (max-width:1080px) {
+  .info {
+    margin: 10px 0 0px;
+  }
+}
+@media screen and (max-width:750px) {
+  .info {
+    margin: 20px 0 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .info {
     width: 80%;
     padding-top: 20px;
     font-size: 0.8rem;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1080px) {
-  .info {
-    margin: 10px 0 0px;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .info {
-    margin: 20px 0 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -254,21 +258,21 @@ header {
   height: 450px;
   background-color: aqua;
 }
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 1081px) {
   #map {
-    height: 350px;
-    width: 90%;
-    margin: 0 auto;
+    width: 60%;
   }
 }
-@media screen and (min-width: 751px) and (max-width: 1080px) {
+@media screen and (min-width:751px) and (max-width:1080px) {
   #map {
     width: 80%;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (max-width:750px) {
   #map {
-    width: 60%;
+    height: 350px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -278,13 +282,13 @@ header {
   justify-content: space-around;
   margin: 0 auto;
 }
-@media screen and (max-width: 750px) {
-  .map {
-    display: block;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1080px) {
+@media screen and (min-width:751px) and (max-width:1080px) {
   .map {
     gap: 20px;
+  }
+}
+@media screen and (max-width:750px) {
+  .map {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */

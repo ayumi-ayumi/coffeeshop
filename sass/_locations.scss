@@ -22,7 +22,7 @@
 
 .location {
   width: 32%;
-  @media screen and (max-width:650px) {
+    @include m.mediaq(tablet) {
     width: 90%;
     margin: 0 auto;
   }
@@ -43,25 +43,27 @@
 
   @include m.mediaq(mobile) {
     padding: 30px 0;
-    background-color: red;
   }
 }
 
 .info {
-  @media screen and (max-width:480px)  {
+  @include m.mediaq(desktop) {
+    margin: 20px 0 10px;
+  }
+  @include m.mediaq(laptop) {
+    margin: 10px 0 0px;
+  }
+  @include m.mediaq(tablet) {
+    margin: 20px 0 0;
+  }
+  @include m.mediaq(mobile) {
     width: 80%;
     padding-top: 20px;
     font-size: 0.8rem;
     margin: 0 auto;
   }
-  @media screen and (min-width:480px) and (max-width:1080px) {
-    margin: 10px 0 0px;
-  }
-  @media screen and (min-width:1080px) {
-    margin: 20px 0 10px;
-  }
-    p {
-      @media screen and (max-width:480px)  {
+  p {
+      @include m.mediaq(mobile) {
         margin: 0 auto;
     }
     }
@@ -70,16 +72,16 @@
 #map {
   height: 450px;
   background-color: aqua;
-  @media screen and (max-width:750px)  {
+  @include m.mediaq(desktop) {
+    width: 60%;
+  }
+  @include m.mediaq(laptop) {
+    width: 80%;
+  }
+  @include m.mediaq(tablet) {
     height: 350px;
     width: 90%;
     margin: 0 auto;
-  }
-  @media screen and (min-width:751px) and (max-width:1080px) {
-    width: 80%;
-  }
-  @media screen and (min-width:1080px) {
-    width: 60%;
   }
 }
 
@@ -88,11 +90,11 @@
   width: 90%;
   justify-content: space-around;
   margin: 0 auto;
-  @media screen and (max-width:750px)  {
-    display: block;
-  }
-  @media screen and (min-width:480px) and (max-width:1080px) {
+  @include m.mediaq(laptop) {
     gap: 20px;
+  }
+  @include m.mediaq(tablet) {
+    display: block;
   }
 }
 
