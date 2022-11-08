@@ -3,10 +3,11 @@
 .location-main {
   padding-top: 60px;
   text-align: center;
+  
   p {
     width: 80%;
     margin: 0 auto 40px;
-    }
+  }
 }
 
 .location-container {
@@ -22,7 +23,7 @@
 
 .location {
   width: 32%;
-    @include m.mediaq(tablet) {
+  @include m.mediaq(tablet) {
     width: 90%;
     margin: 0 auto;
   }
@@ -62,16 +63,18 @@
     font-size: 0.8rem;
     margin: 0 auto;
   }
+
   p {
-      @include m.mediaq(mobile) {
-        margin: 0 auto;
+    @include m.mediaq(mobile) {
+      margin: 0 auto;
     }
-    }
+  }
 }
 
 #map {
   height: 450px;
   background-color: aqua;
+
   @include m.mediaq(desktop) {
     width: 60%;
   }
@@ -90,6 +93,7 @@
   width: 90%;
   justify-content: space-around;
   margin: 0 auto;
+
   @include m.mediaq(laptop) {
     gap: 20px;
   }
@@ -97,4 +101,3 @@
     display: block;
   }
 }
-

@@ -130,6 +130,102 @@ header {
   line-height: 40px;
 }
 
+@media screen and (max-width: 480px) {
+  .team-header {
+    height: 1730px;
+  }
+}
+@media screen and (min-width:751px) and (max-width:1080px) {
+  .team-header {
+    height: 950px;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .team-header {
+    height: 860px;
+  }
+}
+
+.teampage {
+  text-align: center;
+}
+
+.teampage h2 {
+  font-size: 2.5rem;
+  padding-top: 50px;
+}
+
+.teampage p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .teampage p {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .members {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width:751px) and (max-width:1080px) {
+  .members {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .members {
+    display: flex;
+  }
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 20px 20px rgb(253, 247, 247);
+  width: 250px;
+}
+@media screen and (max-width: 480px) {
+  .member img {
+    width: 80%;
+    height: 300px;
+    box-shadow: 25px 25px rgb(253, 247, 247);
+  }
+}
+@media screen and (min-width:751px) and (max-width:1080px) {
+  .member img {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .member img {
+    height: 350px;
+  }
+}
+
+.member p {
+  width: 80%;
+}
+@media screen and (max-width: 480px) {
+  .member p {
+    width: 100%;
+  }
+}
+
+.team-card {
+  margin: 20px auto !important;
+}
+
 .location-main {
   padding-top: 60px;
   text-align: center;

@@ -353,7 +353,7 @@ footer ul li a:hover {
 }
 main {
   background-color: #f4f8cf;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   height: 3570px;
 }
 
@@ -650,7 +650,7 @@ margin: 50px;
   }
   main {
     background-color: #f4f8cf;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
 
 
@@ -877,7 +877,7 @@ margin: 50px;
   }
   main {
     background-color: #f4f8cf;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
 
   
