@@ -4,11 +4,6 @@ header {
   width: 100%;
 }
 
-#home header {
-  max-height: 600px;
-  min-height: 300px;
-}
-
 .countdown em {
   font-style: normal;
 }
@@ -270,7 +265,7 @@ header {
 .contact {
   text-align: center;
   background-color: #f8f1ea;
-  padding: 100px 0;
+  padding: 110px 0;
 }
 @media screen and (max-width: 480px) {
   .contact {

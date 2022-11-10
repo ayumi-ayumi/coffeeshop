@@ -245,33 +245,34 @@ footer ul li a:hover {
 
 .links-container {
   text-align: center;
-  /* width: 90%; */
   display: flex;
   flex-direction: column;
   margin: 20px auto;
 }
+
 .links-container .card {
-  height: 300px;
+  height: 188px;
   width: 300px;
   margin: 10px auto;
 }
+
 .links-container .menu {
   background-image: url(./image/menu.jpg);
-  height: 150px;
-  width: 300px;
+  /* height: 150px; */
+  /* width: 300px; */
   background-size: cover;
   
 }
 .links-container .locations {
   background-image: url(./image/locations.jpg);
-  height: 202px;
-  width: 300px;
+  /* height: 202px; */
+  /* width: 300px; */
   background-size: cover;
 }
 .links-container .team {
   background-image: url(./image/team.jpg);
-  height: 202px;
-  width: 300px;
+  /* height: 202px; */
+  /* width: 300px; */
   background-size: cover;
 }
 
@@ -306,7 +307,7 @@ footer ul li a:hover {
 }
 .hover {
   width: 90%;
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: all 0.2s ease-out;
   position: absolute;
   top: 95px;
@@ -318,17 +319,21 @@ footer ul li a:hover {
   margin: 0 auto;
   font-weight: lighter;
   font-size: 0.9rem;
+  padding: 10px;
 }
 .bg {
   background-color: #1a7b18ab;
-  padding: 10px;
   color: #fff;
   font-weight: 100;
   width: 55%;
   margin: 0 auto;
-  margin-top: 15px;
 }
 
+.bg :hover{
+  background-color: #546a54ab;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
 .aboutus {
   padding-top: 45px;
   margin-top: -45px;
@@ -534,11 +539,6 @@ margin: 50px;
   display: block;
   }
 
-  
-
-
-
-
   .links-container {
     text-align: center;
     width: 90%;
@@ -546,8 +546,6 @@ margin: 50px;
     display: flex;
   }
   .links-container .card {
-    /* height: 250px; */
-    /* width: 250px; */
     margin: 20px;
   }
   .links-container .menu {
@@ -571,8 +569,6 @@ margin: 50px;
 
   .card {
     position: relative;
-    /* width: 100%; */
-    /* height: 100%; */
   }
   .img-link {
     text-decoration: none;
@@ -581,7 +577,6 @@ margin: 50px;
     width: 100%;
   }
   .card:hover .hover {
-    /* display: block; */
     visibility: visible;
   }
 
@@ -593,18 +588,17 @@ margin: 50px;
     width: 100%;
   }
   .inside h4 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     color: #fff;
     letter-spacing: 2px;
     margin-top: 80px;
   }
   .hover {
-    width: 90%;
+    width: 100%;
     visibility: hidden;
     transition: all 0.2s ease-out;
     position: absolute;
-    top: 136px;
-    left: 15px;
+    top: 50%;
   }
   .hover p {
     color: #fff;
@@ -615,7 +609,7 @@ margin: 50px;
   }
   .bg {
     background-color: #1a7b18ab;
-    padding: 10px;
+    padding: 5px;
     color: #fff;
     font-weight: 100;
     width: 55%;
@@ -624,7 +618,7 @@ margin: 50px;
   }
 
   .aboutus {
-    padding-top: 100px;
+    padding-top: 70px;
     /* margin-top: -170px; */
   }
   .aboutus h2 {
@@ -637,8 +631,6 @@ margin: 50px;
     margin: 0 auto;
     padding-bottom: 20px;
   }
-
- 
 
 
   .section h3 {
@@ -685,6 +677,8 @@ margin: 50px;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
+    max-height: 180px;
+    min-height: 180px;
   }
   .rightDiv {
     width: 40%;
@@ -700,8 +694,9 @@ margin: 50px;
   }
   .quote {
   font-style: italic;
-  width: 95%;
+  width:100%;
   margin: 0 auto;
+  font-size: 0.9rem;
   }
 
   .checked {
@@ -873,7 +868,6 @@ margin: 50px;
   }
   main {
     background-color: #f4f8cf;
-    /* padding-top: 50px; */
   }
 
   
@@ -890,8 +884,8 @@ margin: 50px;
   }
   
   .aboutus {
-    padding-top: 170px;
-    margin-top: -170px;
+    padding-top: 100px;
+    /* margin-top: -170px; */
   }
 
   .aboutus h2 {
@@ -1052,6 +1046,7 @@ margin: 50px;
   font-style: italic;
   width: 95%;
   margin: 0 auto;
+  font-size: 0.9rem;
   }
 
   .checked {
@@ -1062,7 +1057,7 @@ margin: 50px;
   .wave-container {
     position: relative;
     background: #f4f8cf;
-    height: 161px;
+    height: 140px;
     width: 100%;
   }
   
@@ -1096,8 +1091,6 @@ margin: 50px;
     left: -1.5%;
     top: 60%;
   }
-
-/
 
 /* Login form */
   .form1 {
@@ -1233,7 +1226,6 @@ margin: 50px;
   }
 
   .card:hover .hover {
-    /* display: block; */
     visibility: visible;
   }
 
@@ -1253,12 +1245,11 @@ margin: 50px;
   }
 
   .hover {
-    width: 90%;
+    width: 100%;
     visibility: hidden;
     transition: all 0.2s ease-out;
     position: absolute;
-    top: 176px;
-    left: 15px;
+    top: 50%;
   }
 
   .hover p {
