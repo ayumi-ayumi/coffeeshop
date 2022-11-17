@@ -359,7 +359,7 @@ footer ul li a:hover {
 main {
   background-color: #f4f8cf;
   /* padding-top: 50px; */
-  height: 3570px;
+  /* height: 3570px; */
 }
 
 
@@ -377,8 +377,8 @@ height: 1420px;
 
 
 .review {
-height: 900px;
-width: 70%;
+/* height: 900px; */
+width: 90%;
 margin: 0 auto;
 
 }
@@ -394,19 +394,27 @@ justify-content: space-evenly;
 text-align: center;
 }
 .onereview {
+display: flex;
+justify-content: space-between;
 border: 1px solid #333;
 border-radius: 3px;
 margin: 5px;
-/* padding: 20px 0; */
+padding: 10px;
 background-color: #f7f9e4;
 width: 100%;
+max-height: 300px;
+min-height: 180px;
 }
 .onereview img{
   border-radius: 50%;
-  height: 90px;
-  width: 90px;
+  border: 4px solid #fff;
+  height: auto;
+  width: 100%;
   display: block;
-  margin: 5px auto
+  margin: 10px auto;
+}
+.leftDiv {
+  padding: 10px;
 }
 .quote {
 /* font-size: 0.7rem; */
@@ -421,14 +429,14 @@ color: orange;
 .wave-container {
 position: relative;
 background: #f4f8cf;
-height: 160px;
+height: 260px;
 width: 100%;
 }
 
 .wave {
 position: absolute;
 height: 161px;
-width: 98%;
+width: 100%;
 background: #f4f8cf;
 bottom: 0;
 }
@@ -490,7 +498,7 @@ margin: 50px;
 @media screen and (max-width:740px) {
 /* Review */
   .onereview {
-    width: 46% !important;
+    /* width: 46% !important; */
   }
 }
 
@@ -677,7 +685,7 @@ margin: 50px;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
-    max-height: 180px;
+    max-height: 300px;
     min-height: 180px;
   }
   .rightDiv {
