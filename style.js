@@ -1,5 +1,11 @@
+// Create the script tag, set the appropriate attributes
+const GoogleMaps_ApiKey = config.apikey;
+var script = document.createElement('script');
+script.src = `https://maps.googleapis.com/maps/api/js?key=${GoogleMaps_ApiKey}&callback=initMap`;
+script.async = true;
+
 // Google map API
-function initMap() {
+window.initMap = function initMap() {
   const center = { lat:52.50811483534891, lng: 13.426003939561651};
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
@@ -24,6 +30,9 @@ function setMarkers(map) {
     })
   }
 }
+
+// Append the 'script' element to 'head'
+document.head.appendChild(script);
 
 //Countdown opening days (Repeatind 7 days)
 let diff = 604800000;
@@ -112,15 +121,17 @@ const coffeeApi = async () => {
 }
 coffeeApi();
 
-// Review using randomuser & Friends quotation
+// Review using randomuser & adviceslip quotation
 const randomuser = async () => {
   try {
     let response = await fetch('https://randomuser.me/api/?results=10')
     let users = await response.json();
     let userList = users.results;
+    console.log(userList)
 
-    let friends = await fetch('https://friends-quotes-api.herokuapp.com/quotes')
-    let quotes = await friends.json();
+    let adviceslip = await fetch('https://api.adviceslip.com/advice')
+    let quotes = await adviceslip.json();
+    console.log(quotes.slip.advice)
 
     for (let i = 0; i < 6; i++) {
 
@@ -189,7 +200,7 @@ const randomuser = async () => {
         }
       }
   
-      q.innerHTML = quotes[i].quote;
+      q.innerHTML = quotes.slip.advice;
       pName.innerHTML = userList[i].name.first;
   
       rightDiv.append(img, divStar);  
