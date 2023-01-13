@@ -116,7 +116,6 @@ const coffeeApi = async () => {
       coffeemenu.appendChild(divParent);
     }
   } catch(error){
-      // console.log(error);
   }
 }
 coffeeApi();
@@ -127,11 +126,10 @@ const randomuser = async () => {
     let response = await fetch('https://randomuser.me/api/?results=10')
     let users = await response.json();
     let userList = users.results;
-    console.log(userList)
 
     let adviceslip = await fetch('https://api.adviceslip.com/advice')
     let quotes = await adviceslip.json();
-    console.log(quotes.slip.advice)
+    let quote = quotes.slip.advice
 
     for (let i = 0; i < 6; i++) {
 
@@ -200,7 +198,7 @@ const randomuser = async () => {
         }
       }
   
-      q.innerHTML = quotes.slip.advice;
+      q.innerHTML = quote;
       pName.innerHTML = userList[i].name.first;
   
       rightDiv.append(img, divStar);  
