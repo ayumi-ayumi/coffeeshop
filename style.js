@@ -37,16 +37,6 @@ document.head.appendChild(script);
 //Countdown opening days (Repeatind 7 days)
 let diff = 604800000;
 countdown = () =>  {
-  
-  // const today = new Date().getTime();
-  // const openingDay = new Date('April 7, 2022 13:42:00').getTime();
-  // console.log(openingDay);
-  // console.log(today);
-  // let diff = (openingDay - today);
-  // if (diff < 0) {
-    //   diff = diff + 604800000;
-    // }
-
   const days = document.querySelector('.days');
   const hours = document.querySelector('.hours');
   const minutes = document.querySelector('.minutes');
@@ -79,46 +69,6 @@ setInterval(countdown, 1000) ;
 // ul.onclick = () => {
 //   nav.classList.remove('open');
 // }
-
-// coffee menu API
-const coffeeApi = async () => {
-  try {
-    let response = await fetch('https://api.sampleapis.com/coffee/hot')
-    let coffee = await response.json()
-
-    for (let i = 0; i < 10; i++) {
-      let coffeemenu = document.querySelector('.coffeemenu');
-  
-      // Create tabs and class 
-      let divParent = document.createElement('div');
-      divParent.classList.add('divParent');
-      
-      // div: title
-      let divTitle = document.createElement('div');
-      divTitle.classList.add('divTitle');
-      divTitle.innerHTML = coffee[i].title;
-      
-      // div: hr
-      let divLine = document.createElement('div');
-      divLine.classList.add('divLine');
-      let hr = document.createElement('hr');
-      divLine.appendChild(hr);
-      
-      // div: price(2-6€)
-      let divPrice = document.createElement('div');
-      divPrice.classList.add('divPrice');
-      let random = (Math.random() * 4) +2;
-      let price =  random.toFixed(2);
-      divPrice.innerHTML =  price + '€';
-  
-      // Append
-      divParent.append(divTitle, divLine, divPrice);
-      coffeemenu.appendChild(divParent);
-    }
-  } catch(error){
-  }
-}
-coffeeApi();
 
 // Review using randomuser & adviceslip quotation
 const randomuser = async () => {
@@ -209,7 +159,6 @@ const randomuser = async () => {
     }
 
   } catch(error){
-      // console.log(error);
   }
   }
   randomuser();
@@ -234,7 +183,6 @@ const randomuser = async () => {
       let button = document.querySelector('#button');
       
       button.addEventListener('click', ()=>{
-        // console.log(email.value);
           if (email.value === emailaddress && pwd.value === password) {
             alert('Welcome Back!');
           } else {
@@ -242,7 +190,6 @@ const randomuser = async () => {
           }
       });
     } catch(error) {
-      // console.log(error);
     }
     };
     example();

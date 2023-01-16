@@ -12,26 +12,37 @@
 
 .location-container {
   margin: 0 auto;
-  width: 95%;
+  // width: 95%;
   display: flex;
   justify-content: space-between;
-  row-gap: 10px;
+
+  @include m.mediaq(tablet) {
+    display: block;
+  }
   @include m.mediaq(mobile) {
     display: block;
   }
 }
 
 .location {
-  width: 32%;
+  width: 33%;
+  margin: 0 auto;
+
   @include m.mediaq(tablet) {
     width: 90%;
     margin: 0 auto;
   }
+
   img {
     width: 100%;
     height: 270px;
     object-fit: cover;
+
+    @include m.mediaq(tablet){
+      display: block;
+    }
   }
+
   h4 {
     margin-top: 10px;
   }
