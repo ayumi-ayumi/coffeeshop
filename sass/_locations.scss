@@ -3,34 +3,33 @@
 .location-main {
   padding-top: 60px;
   text-align: center;
-  
+
   p {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 40px;
   }
 }
 
 .location-container {
   margin: 0 auto;
-  // width: 95%;
-  display: flex;
-  justify-content: space-between;
-
+  
+  @include m.mediaq(mobile) {
+    display: block;
+  }
   @include m.mediaq(tablet) {
     display: block;
   }
-  @include m.mediaq(mobile) {
-    display: block;
+  @include m.mediaq(laptop) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .location {
-  width: 33%;
+  width: 95%;
   margin: 0 auto;
-
-  @include m.mediaq(tablet) {
-    width: 90%;
-    margin: 0 auto;
+  @include m.mediaq(laptop) {
+    width: 32%;
   }
 
   img {
@@ -38,7 +37,7 @@
     height: 270px;
     object-fit: cover;
 
-    @include m.mediaq(tablet){
+    @include m.mediaq(tablet) {
       display: block;
     }
   }
@@ -51,19 +50,13 @@
 .contact {
   text-align: center;
   background-color: #f8f1ea;
-  padding: 135px 0;
+  padding: 135px 0 80px;
 
-  @include m.mediaq(mobile) {
-    padding: 30px 0;
-  }
 }
 
 .info {
-  @include m.mediaq(desktop) {
-    margin: 20px 0 10px;
-  }
   @include m.mediaq(laptop) {
-    margin: 10px 0 0px;
+    margin: 20px 0 10px;
   }
   @include m.mediaq(tablet) {
     margin: 20px 0 0;
@@ -86,29 +79,30 @@
   height: 450px;
   background-color: aqua;
 
-  @include m.mediaq(desktop) {
-    width: 60%;
-  }
   @include m.mediaq(laptop) {
     width: 80%;
   }
   @include m.mediaq(tablet) {
-    height: 350px;
+    height: 60vh;
     width: 90%;
     margin: 0 auto;
   }
 }
 
 .map {
-  display: flex;
-  width: 90%;
+  width: 95%;
   justify-content: space-around;
   margin: 0 auto;
-
-  @include m.mediaq(laptop) {
-    gap: 20px;
+  
+  @include m.mediaq(mobile) {
+    display: block;
   }
   @include m.mediaq(tablet) {
     display: block;
+  }
+  @include m.mediaq(laptop) {
+    display: flex;
+    width: 96%;
+    gap: 20px;
   }
 }

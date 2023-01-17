@@ -13,15 +13,14 @@
   background-color: #49b2bd62;
   width: 80%;
   margin: 0 auto;
-}
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
 
-.menu-container h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 30px;
-
-  @include m.mediaq(mobile) {
-    font-size: 2rem;
+    @include m.mediaq(mobile) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -40,10 +39,9 @@
 .divLine {
   padding: 5px 15px;
   flex-grow: 2;
-}
-
-.divLine hr {
-  border-style: dotted;
+  hr {
+    border-style: dotted;
+  }
 }
 
 .divPrice,

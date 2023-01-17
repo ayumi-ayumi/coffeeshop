@@ -4,31 +4,28 @@
   @include m.mediaq(mobile) {
     height: 1730px;
   }
-  @include m.mediaq(laptop) {
+  @include m.mediaq(tablet) {
     height: 950px;
   }
-  @include m.mediaq(desktop) {
+  @include m.mediaq(laptop) {
     height: 860px;
   }
 }
 
 .teampage {
   text-align: center;
-  // padding-top: 180px;
-}
+  h2 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+  }
+  p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 
-.teampage h2 {
-  font-size: 2.5rem;
-  padding-top: 50px;
-}
-
-.teampage p {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 20px;
-
-  @include m.mediaq(mobile) {
-    padding-bottom: 0;
+    @include m.mediaq(mobile) {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -37,43 +34,43 @@
     width: 90%;
     margin: 20px auto;
   }
+  @include m.mediaq(tablet) {
+    display: flex;
+    flex-direction: column;
+  }
   @include m.mediaq(laptop) {
     display: flex;
     justify-content: center;
-  }
-  @include m.mediaq(desktop) {
-    display: flex;
+    flex-direction: row;
   }
 }
 
 .member {
   text-align: center;
-}
+  img {
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 20px 20px rgb(253, 247, 247);
+    width: 250px;
 
-.member img {
-  border-radius: 5px;
-  object-fit: cover;
-  box-shadow: 20px 20px rgb(253, 247, 247);
-  width: 250px;
-
-  @include m.mediaq(mobile) {
+    @include m.mediaq(mobile) {
+      width: 80%;
+      height: 300px;
+      box-shadow: 25px 25px rgb(253, 247, 247);
+    }
+    @include m.mediaq(tablet) {
+      height: auto;
+    }
+    @include m.mediaq(laptop) {
+      height: 350px;
+    }
+  }
+  p {
     width: 80%;
-    height: 300px;
-    box-shadow: 25px 25px rgb(253, 247, 247);
-  }
-  @include m.mediaq(laptop) {
-    height: auto;
-  }
-  @include m.mediaq(desktop) {
-    height: 350px;
-  }
-}
 
-.member p {
-  width: 80%;
-
-  @include m.mediaq(mobile) {
-    width: 100%;
+    @include m.mediaq(mobile) {
+      width: 100%;
+    }
   }
 }
 
