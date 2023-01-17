@@ -191,7 +191,6 @@ a {
   }
 }
 
-/* index.html */
 @media screen and (max-width: 600px) {
   .aboutus-main {
     display: flex;
@@ -251,6 +250,7 @@ a {
     justify-content: space-evenly;
     width: 95%;
     height: 600px;
+    padding-top: 50px;
   }
   .section .left {
     position: relative;
@@ -265,12 +265,12 @@ a {
   .section .left::after {
     background-color: #f4f8cf;
     width: 74%;
-    height: 120%;
+    height: 90%;
     position: absolute;
     content: "";
     z-index: 0;
-    bottom: -20%;
-    left: -200px;
+    bottom: -10%;
+    left: -160px;
   }
   .section .right {
     width: 600px;
@@ -488,18 +488,6 @@ footer ul li a:hover {
     width: 300px;
     margin: 10px auto;
   }
-  .links-container .menu {
-    /* height: 150px; */
-    /* width: 300px; */
-  }
-  .links-container .locations {
-    /* height: 202px; */
-    /* width: 300px; */
-  }
-  .links-container .team {
-    /* height: 202px; */
-    /* width: 300px; */
-  }
 }
 @media screen and (min-width:601px) {
   .links-container {
@@ -674,13 +662,11 @@ footer ul li a:hover {
 @media screen and (min-width:601px) {
   .aboutus {
     padding-top: 70px;
-    /* margin-top: -170px; */
   }
 }
 @media screen and (min-width: 968px) {
   .aboutus {
     padding-top: 100px;
-    /* margin-top: -170px; */
   }
 }
 
