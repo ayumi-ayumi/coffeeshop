@@ -1,11 +1,5 @@
-// Create the script tag, set the appropriate attributes
-const GoogleMaps_ApiKey = config.apikey;
-var script = document.createElement('script');
-script.src = `https://maps.googleapis.com/maps/api/js?key=${GoogleMaps_ApiKey}&callback=initMap`;
-script.async = true;
-
 // Google map API
-window.initMap = function initMap() {
+function initMap() {
   const center = { lat:52.50811483534891, lng: 13.426003939561651};
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
@@ -30,9 +24,6 @@ function setMarkers(map) {
     })
   }
 }
-
-// Append the 'script' element to 'head'
-document.head.appendChild(script);
 
 //Countdown opening days (Repeatind 7 days)
 let diff = 604800000;
