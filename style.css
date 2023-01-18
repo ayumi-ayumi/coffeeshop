@@ -150,7 +150,6 @@ a {
   height: 20%;
   position: absolute;
   content: '';
-  z-index: 0;
   bottom: -20%;
   left: 0; */
 }
