@@ -56,7 +56,6 @@ header {
 
 .headerMain {
   text-align: center;
-  // padding: 8vmax 0;
 }
 
 .headerMain {
@@ -67,9 +66,8 @@ header {
     text-shadow: #00ff6ec5 1px 0 10px;
     padding-top: 80px;
     @include m.mediaq(mobile) {
-    padding-top: 20px;
-
-  }
+      padding-top: 20px;
+    }
   }
 
   p {
