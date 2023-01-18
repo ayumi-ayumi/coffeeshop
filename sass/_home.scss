@@ -11,6 +11,31 @@ a {
   cursor: pointer;
 }
 
+// .locations h2 {
+//   @include m.mediaq(mobile) {
+//     padding-top: 100px;
+//     font-size: 3rem;
+//     margin: 0;
+//   }
+//   @include m.mediaq(tablet) {
+//     font-size: 2rem;
+//     padding-top: 200px;
+//   }
+// }
+
+// .locations p {
+//   @include m.mediaq(mobile) {
+//     font-size: 0.8rem;
+//     width: 80%;
+//     margin: 0 auto;
+//   }
+//   @include m.mediaq(tablet) {
+//     width: 80%;
+//     margin: 0 auto;
+//     margin-bottom: 20px;
+//   }
+// }
+
 .navlist {
   @include m.mediaq(mobile) {
     position: absolute;
@@ -117,6 +142,7 @@ a {
   }
 }
 
+/* index.html */
 .aboutus-main {
   @include m.mediaq(mobile) {
     display: flex;
@@ -177,7 +203,6 @@ a {
     justify-content: space-evenly;
     width: 95%;
     height: 600px;
-    padding-top: 50px;
 
     .left {
       position: relative;
@@ -191,12 +216,12 @@ a {
       &::after {
         background-color: #f4f8cf;
         width: 74%;
-        height: 90%;
+        height: 120%;
         position: absolute;
         content: "";
         z-index: 0;
-        bottom: -10%;
-        left: -160px;
+        bottom: -20%;
+        left: -200px;
       }
     }
     .right {
@@ -413,6 +438,18 @@ footer {
       width: 300px;
       margin: 10px auto;
     }
+    .menu {
+      /* height: 150px; */
+      /* width: 300px; */
+    }
+    .locations {
+      /* height: 202px; */
+      /* width: 300px; */
+    }
+    .team {
+      /* height: 202px; */
+      /* width: 300px; */
+    }
   }
   @include m.mediaq(tablet) {
     width: 90%;
@@ -570,9 +607,11 @@ footer {
   }
   @include m.mediaq(tablet) {
     padding-top: 70px;
+    /* margin-top: -170px; */
   }
   @include m.mediaq(laptop) {
     padding-top: 100px;
+    /* margin-top: -170px; */
   }
 }
 
@@ -871,6 +910,8 @@ main {
     margin: 25px;
   }
 }
+
+
 
 .index header {
   @include m.mediaq(laptop) {
