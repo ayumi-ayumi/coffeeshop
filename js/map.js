@@ -1,5 +1,5 @@
 // Create the script tag, set the appropriate attributes
-const GoogleMaps_ApiKey = config.apikey;
+const GoogleMaps_ApiKey = apikey;
 var script = document.createElement('script');
 script.src = `https://maps.googleapis.com/maps/api/js?key=${GoogleMaps_ApiKey}&callback=initMap`;
 script.async = true;
